@@ -1,0 +1,83 @@
+---
+import { Picture } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+import munatsiImage from "~/assets/munatsi.jpg"
+import HeroImage from "~/components/hero-image.astro";
+import Starfield from "~/components/starfield.astro";
+import GitHubCorner from "./github-corner.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+---
+
+<section class="relative h-full bg-black">
+  <Starfield />
+  <GitHubCorner />
+  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
+    <HeroImage />
+  </div>
+  <div class="relative grid h-full place-items-center sm:grid-cols-2">
+    <h2
+      class="flex flex-col gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
+    >
+      <Icon name="logowhite" class="h-32 text-white md:h-48" />
+      <div
+        class="text-center text-white font-extrabold tracking-tighter text-8xl"
+      >
+        Hi there,<br />
+        i'm <span class="gradient-text">Munatsi</span>
+      </div>
+    </h2>
+    <div
+      id="munatsi"
+      class="w-2/3 max-w-3xl self-end sm:w-10/12 sm:self-auto sm:justify-self-end"
+    >
+      <Picture
+        class="h-72 w-72 object-cover rounded-full"
+        src={munatsiImage}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="Munatsi's head shot floating in space"
+      />
+    </div>
+  </div>
+</section>
+
+<noscript>
+  <style>
+    #splash-bg-fallback {
+      display: block;
+    }
+  </style>
+</noscript>
+
+<style>
+  @keyframes float {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 30px, 0);
+    }
+  }
+
+  #astronaut {
+    animation: float linear 2.5s infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #astronaut {
+      @apply animate-none;
+    }
+
+    :global(#starfield) {
+      @apply hidden;
+    }
+
+    #splash-bg-fallback {
+      @apply block;
+    }
+  }
+</style>

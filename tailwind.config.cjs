@@ -1,24 +1,31 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  darkMode: "class",
+  content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
+      fontFamily: {
+        sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
       },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+      colors: {
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+      },
+      textColor: {
+        default: "var(--color-text)",
+        offset: "var(--color-text-offset)",
+      },
+      backgroundColor: {
+        default: "var(--color-background)",
+        offset: "var(--color-background-offset)",
+      },
+      borderColor: {
+        default: "var(--color-border)",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  corePlugins: {
+    fontSize: false,
+  },
+  plugins: [require("tailwindcss-fluid-type")],
 };

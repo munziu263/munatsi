@@ -3,23 +3,23 @@
     preserveAspectRatio="xMidYMid meet" version="1.0">
     <defs>
         <g />
-        <clipPath id="edcd95910e">
+        <clipPath id="2ffb7c2ef4">
             <path
                 d="M 43.933594 43.933594 L 331.183594 43.933594 L 331.183594 331.183594 L 43.933594 331.183594 Z M 43.933594 43.933594 "
                 clip-rule="nonzero" />
         </clipPath>
     </defs>
-    <g clip-path="url(#edcd95910e)">
+    <g clip-path="url(#2ffb7c2ef4)">
         <path stroke-linecap="butt"
-            transform="matrix(0.750337, 0, 0, 0.750337, 43.933823, 43.933826)" fill="none"
+            transform="matrix(0.750337, 0, 0, 0.750337, 43.933823, 43.933819)" fill="none"
             stroke-linejoin="miter"
-            d="M -0.000305816 -0.000309414 L 382.827857 -0.000309414 L 382.827857 382.827853 L -0.000305816 382.827853 L -0.000305816 -0.000309414 "
-            stroke="#ffffff" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
+            d="M -0.000305816 -0.000299819 L 382.827857 -0.000299819 L 382.827857 382.827863 L -0.000305816 382.827863 L -0.000305816 -0.000299819 "
+            stroke="#000000" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
     </g>
-    <path fill="#ffffff"
+    <path fill="#000000"
         d="M 59.707031 94.875 L 145.207031 94.875 L 145.207031 279.375 L 59.707031 279.375 L 59.707031 94.875 "
         fill-opacity="1" fill-rule="nonzero" />
-    <g fill="#000000" fill-opacity="1">
+    <g fill="#ffffff" fill-opacity="1">
         <g transform="translate(59.707033, 239.624984)">
             <g>
                 <path
@@ -27,7 +27,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="#000000" fill-opacity="1">
         <g transform="translate(144.90234, 239.624984)">
             <g>
                 <path
@@ -35,7 +35,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="#000000" fill-opacity="1">
         <g transform="translate(230.085962, 239.624984)">
             <g>
                 <path

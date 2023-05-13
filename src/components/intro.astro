@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="I'm a software developer" id="intro">
+  <Icon slot="eyebrow" name="logowhite" class="h-36" />
+  <Fragment slot="lead">
+    I’m passionate about <span class="text-primary">building software solutions</span> 
+    to people's problems.
+    <br />
+    <br />
+    How can I help <span class="text-primary">you</span>?
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="."
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="information" class="h-8" />
+      <span>About Me</span>
+    </a>
+    <a
+      href="https://github.com/munziu263?tab=repositories"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="github" class="h-8" />
+      <span>My Projects</span>
+    </a>
+  </div>
+</ContentSection>
