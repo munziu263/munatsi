@@ -1,7 +1,7 @@
 ---
 import { Picture } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
-import munatsiImage from "~/assets/munatsi.jpg"
+import munatsiImage from "~/assets/munatsi.png"
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
@@ -30,10 +30,10 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     </h2>
     <div
       id="munatsi"
-      class="w-2/3 max-w-3xl self-end sm:w-10/12 sm:self-auto sm:justify-self-end"
+      class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
       <Picture
-        class="h-72 w-72 object-cover rounded-full"
+        class="h-full w-full object-cover rounded-full"
         src={munatsiImage}
         widths={widths}
         sizes={sizes}
