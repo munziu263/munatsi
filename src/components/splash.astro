@@ -1,7 +1,7 @@
 ---
 import { Picture } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
-import munatsiImage from "~/assets/munatsi.png"
+import munatsiImage from "~/assets/munatsi.png";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
@@ -16,30 +16,31 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
-  <div class="relative grid h-full place-items-center sm:grid-cols-2">
-    <h2
-      class="flex flex-col gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
-    >
-      <Icon name="logowhite" class="h-32 text-white md:h-48" />
-      <div
-        class="text-center text-white font-extrabold tracking-tighter text-8xl"
-      >
-        Hi there,<br />
-        i'm <span class="gradient-text">Munatsi</span>
-      </div>
-    </h2>
+  <div class="h-full p-4">
     <div
-      id="munatsi"
-      class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
+      class="relative grid h-full place-items-center gap-4 border sm:grid-cols-2 sm:gap-8"
     >
-      <Picture
-        class="h-full w-full object-cover rounded-full"
-        src={munatsiImage}
-        widths={widths}
-        sizes={sizes}
-        loading="eager"
-        alt="Munatsi's head shot floating in space"
-      />
+      <h2 class="flex items-center">
+        <Icon name="logomarkwhite" class="h-24 text-white md:h-48" />
+        <div
+          class="gradient-text text-center font-extrabold text-white text-6xl md:text-8xl"
+        >
+          munatsi
+        </div>
+      </h2>
+      <div
+        id="munatsi"
+        class="w-2/3 max-w-3xl self-start text-right sm:w-10/12 sm:self-auto sm:justify-self-start"
+      >
+        <p>Born in Harare, Zimbabwe.</p>
+        <p>Passionate about building tools.</p>
+        <br />
+        <br />
+        <p>Python</p>
+        <p>Typescript</p>
+        <br />
+        <br />
+      </div>
     </div>
   </div>
 </section>

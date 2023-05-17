@@ -1,16 +1,31 @@
 ---
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
+
+import { Picture } from "@astrojs/image/components";
+import munatsiImage from "~/assets/munatsi.png"
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
-<ContentSection title="I'm a software developer" id="intro">
-  <Icon slot="eyebrow" name="logowhite" class="h-36" />
+<ContentSection title="munatsi" id="intro">
+      <Picture
+        slot="eyebrow"
+        class="h-32 object-cover rounded-full"
+        src={munatsiImage}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="Munatsi's head shot floating in space"
+      />
   <Fragment slot="lead">
-    I’m passionate about <span class="text-primary">building software solutions</span> 
+    I’m a <span class="text-primary">software engineer</span> 
+    passionate about <span class="text-primary">building solutions</span> 
     to people's problems.
     <br />
     <br />
-    How can I help <span class="text-primary">you</span>?
+    Let's work <span class="text-primary">together</span>.
   </Fragment>
   <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
     <a
