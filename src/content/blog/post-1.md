@@ -4,7 +4,7 @@ title: Post 1
 description: My first post
 date: 2023-05-18
 author: Munatsi Ziumbe
-# image: ~/data/images/blossoms.jpg
+image: src/data/blog/images/blossoms.jpg
 ---
 Lorem ipsum dolor sit amet.
 

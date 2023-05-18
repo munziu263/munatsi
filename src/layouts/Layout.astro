@@ -1,7 +1,7 @@
 ---
 import "@fontsource/inter/variable.css";
 import Footer from "~/components/footer.astro";
-import HeaderFixed from "~/components/header.astro";
+import HeaderFixed from "~/components/header-fixed.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -60,5 +60,6 @@ const description =
     <div class="space-y-24 px-8 py-32">
         <slot></slot>
     </div>
+    <Footer />
   </body>
 </html>

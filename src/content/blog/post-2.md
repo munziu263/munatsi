@@ -2,9 +2,9 @@
 draft: false
 title: Post 2
 description: My second post
-date: 2023-05-19
+date: 2023-05-18
 author: Munatsi Ziumbe
-image: ~/data/images/blossoms.jpg
+image: src/data/blog/images/boat.jpg
 ---
 
 Lorem ipsum dolor sit amet.
