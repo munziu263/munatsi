@@ -4,22 +4,22 @@ import ShowcaseCard from "~/components/showcase-card.astro";
 import { getShowcase } from "~/data/showcase";
 
 const sites = await getShowcase();
+const title = Astro.props.title ? Astro.props.title : "Showcase"
 ---
 
-<ContentSection title="Showcase" id="showcase">
+<ContentSection title={title} id="showcase">
   <Fragment slot="lead">
-    Astro is <span class="text-primary">versatile</span>.{" "}
-    <span class="text-primary">Explore</span> what's possible and get{" "}
-    <span class="text-primary">inspired</span>.
+    Follow along as I <span class="text-primary">build</span> this website.{" "}
+    And <span class="text-primary">other stuff!</span>.
   </Fragment>
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {sites.map((site) => <ShowcaseCard site={site} />)}
     </div>
-    <p class="text-right text-sm">
+    <!-- <p class="text-right text-sm">
       <a class="text-primary" href="https://astro.build/showcase/">
         ...and more &rarr;
       </a>
-    </p>
+    </p> -->
   </div>
 </ContentSection>
