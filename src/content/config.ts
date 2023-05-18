@@ -12,7 +12,10 @@ const blog = defineCollection({
       "Sophia Imogen Ziumbe",
       "Kundai Ziumbe ",
     ]),
-    image: z.string().optional(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
   }),
 });
 // 3. Export a single `collections` object to register your collection(s)

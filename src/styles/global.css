@@ -1,4 +1,12 @@
 /* TODO: consider creating <Button> and <GradientText> components */
+h2 {
+  @apply mb-4 font-bold text-secondary text-xl;
+}
+
+p {
+  @apply pb-1;
+}
+
 a,
 .btn {
   @apply transition-colors duration-200;

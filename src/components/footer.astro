@@ -5,24 +5,14 @@ import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
   {
-    url: "https://astro.build/",
-    description: "Astro's official website",
+    url: "/",
+    description: "Munatsi Ziumbe - Landing Page",
     icon: "mdi:home",
   },
   {
-    url: "https://github.com/mhyfritz/astro-landing-page",
+    url: "https://github.com/munziu263/munatsi",
     description: "View source on GitHub",
     icon: "fa-brands:github-alt",
-  },
-  {
-    url: "https://astro.build/chat",
-    description: "Astro on Discord",
-    icon: "fa-brands:discord",
-  },
-  {
-    url: "https://twitter.com/astrodotbuild",
-    description: "Astro on Twitter",
-    icon: "fa-brands:twitter",
   },
 ];
 ---
@@ -31,7 +21,7 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-2">
     {
       links.map((link) => (
         <li>

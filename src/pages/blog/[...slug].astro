@@ -1,6 +1,8 @@
 ---
+import { Image } from "@astrojs/image/components";
 import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "~/layouts/Layout.astro";
+import BlogLayout from "~/layouts/BlogLayout.astro";
 import Container from "~/components/container.astro";
 
 export async function getStaticPaths() {
@@ -12,20 +14,28 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  entry: CollectionEntry<"blog">
+  entry: CollectionEntry<"blog">;
 }
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const width = 1920;
+const height = 480;
+const sizes = "100vw";
 ---
 
+<Image
+  src={entry.data.image.src}
+  class=""
+  width={width}
+  height={height}
+  aspectRatio={16 / 9}
+  sizes={sizes}
+  alt={entry.data.image.alt}
+/>
 <Layout>
   <Container>
-    <h1 class="gradient-text font-extrabold tracking-tight text-6xl">
-      {entry.data.title}
-    </h1>
-    <a class="font-bold text-primary text-lg">{entry.data.author}</a>
-    <p class="text-xs text-secondary">{entry.data.date.toDateString()}</p>
-    <br />
-    <Content />
+    <BlogLayout frontmatter={entry.data}>
+      <Content />
+    </BlogLayout>
   </Container>
 </Layout>

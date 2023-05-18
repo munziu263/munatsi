@@ -1,0 +1,19 @@
+---
+// 1. The frontmatter prop gives access to frontmatter and other data
+const { frontmatter } = Astro.props;
+---
+<html>
+  <head>
+    <!-- Add other Head elements here, like styles and meta tags. -->
+    <title >{frontmatter.title}</title>
+  </head>
+  <body>
+    <!-- Add other UI components here, like common headers and footers. -->
+    <h1 class="gradient-text font-extrabold tracking-tight text-6xl">{frontmatter.title}</h1> 
+    <p>by {frontmatter.author}</p>
+    <!-- 2. Rendered HTML will be passed into the default slot. -->
+    <p class="text-xs text-secondary"> Written on: {frontmatter.date.toDateString()}</p>
+    <br />
+    <slot />
+  </body>
+</html>

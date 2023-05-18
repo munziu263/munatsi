@@ -1,13 +1,14 @@
 ---
 draft: false
-title: Post 1
-description: My first post
+title: In search of a blog...
+description: My first blog post, and the start of a journey
 date: 2023-05-18
 author: Munatsi Ziumbe
-image: src/data/blog/images/blossoms.jpg
+image: 
+    src: /src/data/blog/images/blossoms.jpg
+    alt: A tree in blossom
 ---
-Lorem ipsum dolor sit amet.
+## Hi there!
+Welcome to my blog. As hinted to in the title, I am not quite sure what it will be about. But that is a discussion for another day!
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, a rerum! Porro alias consequatur praesentium, assumenda suscipit dolorem eius vitae sequi cupiditate facilis corporis, culpa facere totam veniam. Laudantium, quae.
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, a rerum! Porro alias consequatur praesentium, assumenda suscipit dolorem eius vitae sequi cupiditate facilis corporis, culpa facere totam veniam. Laudantium, quae.

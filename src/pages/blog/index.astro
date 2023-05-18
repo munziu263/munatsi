@@ -2,20 +2,28 @@
 import { getCollection } from "astro:content";
 import Container from "~/components/container.astro";
 import Layout from "~/layouts/Layout.astro";
-import Card from "~/components/card.astro"
+import Card from "~/components/card.astro";
 
-const blogPosts = await getCollection("blog", ({data}) => {
-    return !data.draft && data.date < new Date();
-    });
+const blogPosts = await getCollection("blog", ({ data }) => {
+  return !data.draft && data.date < new Date();
+});
 ---
 
 <Layout>
   <Container>
-    <h1 class="gradient-text font-extrabold tracking-tight text-6xl">Blog</h1>
-    <div class="flex gap-8">{blogPosts.map((post) => (
-      <Card title={post.data.title} href={`/blog/${post.slug}`} image={post.data.image} description={post.data.description} date={post.data.date.toDateString()} />
-    
-      ))}</div>
-    
+    <h1 class="gradient-text font-extrabold tracking-tight text-4xl md:text-6xl mb-8">Blog</h1>
+    <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+      {
+        blogPosts.map((post) => (
+          <Card
+            title={post.data.title}
+            href={`/blog/${post.slug}`}
+            image={post.data.image}
+            description={post.data.description}
+            date={post.data.date.toDateString()}
+          />
+        ))
+      }
+    </div>
   </Container>
 </Layout>
