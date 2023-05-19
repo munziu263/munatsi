@@ -1,11 +1,11 @@
 ---
-draft: true
+draft: false
 title: Post 3
 description: My third post
 date: 2023-05-18
 author: Munatsi Ziumbe
 image: 
-    src: /src/data/blog/images/waterfall.jpg
+    src: /src/assets/waterfall.jpg
     alt: A waterfall in a forest
 ---
 Lorem ipsum dolor sit amet.

@@ -5,7 +5,7 @@ description: My first blog post, and the start of a journey
 date: 2023-05-18
 author: Munatsi Ziumbe
 image: 
-    src: /src/data/blog/images/blossoms.jpg
+    src: /src/assets/blossoms.jpg
     alt: A tree in blossom
 ---
 ## Hi there!

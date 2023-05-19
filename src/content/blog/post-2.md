@@ -1,11 +1,11 @@
 ---
-draft: true
+draft: false
 title: Post 2
 description: My second post
 date: 2023-05-18
 author: Munatsi Ziumbe
 image: 
-    src: /src/data/blog/images/cake.jpg
+    src: /src/assets/cake.jpg
     alt: A homemade apple cake with a slice taken out of it.
 ---
 

@@ -1,11 +1,11 @@
 ---
-draft: true
+draft: false
 title: Post 4
 description: My fourth post
 date: 2023-05-18
 author: Munatsi Ziumbe
 image: 
-    src: /src/data/blog/images/alpine-village.jpg
+    src: /src/assets/alpine-village.jpg
     alt: A porch with red flowers in the street of a village in the French Alps
 ---
 Lorem ipsum dolor sit amet.
