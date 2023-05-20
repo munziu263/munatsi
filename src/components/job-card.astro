@@ -1,0 +1,26 @@
+---
+import { literal } from "astro/zod";
+const { job } = Astro.props;
+---
+
+<div class="max-w-md rounded-lg border border-secondary bg-offset shadow">
+  <div class="p-5">
+    <div class="flex place-content-between items-start">
+      <a href="#">
+        <h5
+          class="mb-1 font-extralight tracking-tight text-primary text-xl md:text-2xl"
+        >
+          {job.role}
+        </h5>
+      </a>
+      <p
+        class="shrink-0 inline-flex h-6 rounded-full bg-blue-700 px-2 text-center font-medium text-white text-xs hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:text-xs"
+      >
+        {job.startDate} - {job.endDate}
+      </p>
+    </div>
+    <p class="text-sm md:text-lg mb-3 font-bold text-default">{job.company}</p>
+    <ul class="list-disc ml-8 text-sm">{job.achievements.map((item: any) => <li class="p-1">{item}</li>)}</ul>
+    
+  </div>
+</div>

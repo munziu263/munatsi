@@ -1,8 +1,4 @@
 /* TODO: consider creating <Button> and <GradientText> components */
-h2 {
-  @apply mb-4 font-bold text-secondary text-xl;
-}
-
 p {
   @apply pb-1;
 }
@@ -16,5 +12,16 @@ a,
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
-  @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
+  @apply bg-gradient-to-br from-sky-500 via-violet-500 to-rose-500 animate-text;
+}
+
+
+article.minimalist {
+  @apply prose text-default
+  /* h2 */
+  prose-h2:bg-clip-text prose-h2:text-transparent 
+  prose-h2:bg-gradient-to-l prose-h2:from-sky-500 prose-h2:via-violet-500 prose-h2:to-rose-500
+  /* h3 */
+  prose-h3:capitalize prose-h3:text-primary
+
 }

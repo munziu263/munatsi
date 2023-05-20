@@ -1,0 +1,30 @@
+---
+import JobCard from "~/components/job-card.astro";
+const experience = [
+  {
+    role: "Software Consultant",
+    company: "Mallowstreet",
+    startDate: "2022",
+    endDate: "Present",
+    achievements: [
+      "Developed a Natural Language Processing program using spaCy to identify and suggest corrections to errors made by the OpenAI automatic speech recognition system, Whisper.",
+      "Utilized NLP techniques and phonetic algorithms to match mistranscribed names to individuals and companies in Mallowstreet's CRM system.",
+    ],
+  },
+  {
+    role: "Software Developer",
+    company: "Aspen Equity Group",
+    startDate: "June 2022",
+    endDate: "Present",
+    achievements: [
+    "Led the complete refactoring of the xFactor Portfolio Optimizer backend service for VirtuosoHub, AEG's investment solutions web application.",
+    "Implemented SOLID principles to enhance codebase flexibility and maintainability.",
+    "Introduced unit and end-to-end testing, significantly improving reliability.",
+    "Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities, improving developer intuition of the optimization problem and the program's success.",
+    "Designed and developed Virtuoso's integration with Zendesk, a third-party customer support platform.",
+    ],
+  },
+];
+---
+
+<div class="flex gap-4">{experience.map((job) => <JobCard job={job} />)}</div>

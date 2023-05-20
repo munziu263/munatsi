@@ -1,0 +1,42 @@
+---
+import Layout from "~/layouts/Layout.astro";
+// 1. The frontmatter prop gives access to frontmatter and other data
+const { frontmatter } = Astro.props;
+console.log(frontmatter)
+---
+
+<Layout>
+  <div class="px-32 align center">
+    <div>
+      <!-- Add other UI components here, like common headers and footers. -->
+      <h1
+        class="gradient-text font-extrabold tracking-tight text-6xl"
+      >
+        {frontmatter.author}
+      </h1>
+      <div class="">
+        <p class="text-md font-bold text-primary">{frontmatter.location}</p>
+        <div class="flex gap-8 py-2 text-white text-xs">
+          <p
+            class="rounded-full bg-gradient-to-br from-accent to-primary px-2 py-1 shadow-md"
+          >
+            {frontmatter.email}
+          </p>
+          <p
+            class="rounded-full bg-gradient-to-br from-accent to-primary px-2 py-1"
+          >
+            {frontmatter.mobile}
+          </p>
+        </div>
+        <article class="minimalist self-center">
+          <slot />
+          <h2>Skills</h2>
+          {frontmatter.skills.languages.map(language => <li>{language}</li>)}
+          {frontmatter.skills.programmingLanguages.Python.map(lang => lang)}
+          {frontmatter.skills.languages.map(language => <li>{language}</li>)}
+        </article>
+
+      </div>
+    </div>
+  </div>
+</Layout>

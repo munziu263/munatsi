@@ -10,10 +10,12 @@ module.exports = {
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
       },
       textColor: {
         default: "var(--color-text)",
         offset: "var(--color-text-offset)",
+        accent: "var(--color-accent)",
       },
       backgroundColor: {
         default: "var(--color-background)",
@@ -22,10 +24,28 @@ module.exports = {
       borderColor: {
         default: "var(--color-border)",
       },
+      animation: {
+        text: "text 10s ease infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+      },
     },
   },
   corePlugins: {
     fontSize: false,
   },
-  plugins: [require("tailwindcss-fluid-type")],
+  plugins: [
+    require("tailwindcss-fluid-type"),
+    require("@tailwindcss/typography"),
+  ],
 };
