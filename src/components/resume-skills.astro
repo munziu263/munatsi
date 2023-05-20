@@ -1,0 +1,93 @@
+---
+import SkillIcon from "~/components/skill-icon.astro";
+
+const skills = {
+  programmingLanguages: [
+    {
+      name: "Python",
+      frameworks: [
+        { name: "Flask", icon: "flask-original" },
+        { name: "FastAPI", icon: "fastapi-original" },
+      ],
+      icon: "python-original",
+    },
+    {
+      name: "Typescript",
+      frameworks: [
+        { name: "React", icon: "react-original" },
+        { name: "Astro", icon: "astroicon" },
+      ],
+      icon: "typescript-original",
+    },
+    {
+      name: "SQL",
+      frameworks: [
+        { name: "MySql", icon: "mysql-original" },
+        { name: "PostgreSQL", icon: "postgresql-original" },
+      ],
+      icon: "sqlite-original",
+    },
+  ],
+  technonologies: [
+    { name: "Linux", icon: "linux-original" },
+    { name: "Git", icon: "git-original" },
+    { name: "GitHub", icon: "github-original" },
+    { name: "Subversion", icon: "subversion-original" },
+    { name: "Redis", icon: "redis-original" },
+    { name: "Docker", icon: "docker-original" },
+    { name: "Tailwind", icon: "tailwindcss-plain" },
+    { name: "Pytest", icon: "pytest-original" },
+  ],
+  tools: [
+    { name: "VSCode", icon: "vscode-original-wordmark" },
+    { name: "NeoVim", icon: "vim-original" },
+  ],
+  languages: [
+    { name: "English (Native)", icon: "openmoji:flag-united-kingdom" },
+    { name: "Spanish (Conversational)", icon: "openmoji:flag-spain" },
+  ],
+};
+---
+
+<div class="grid grid-cols-1 md:grid-cols-4">
+  <h1 class="py-4 font-bold text-lg md:col-span-1">Skills</h1>
+  <div class="flex flex-col gap-4 md:col-span-3 py-4 rounded-lg bg-offset shadow-lg">
+    <h1 class="font-extralight text-lg text-center">Programming Languages & Frameworks</h1>
+    <div class="grid gap-4">
+      {
+        skills.programmingLanguages.map((language: any) => (
+            <div class="flex">
+              <SkillIcon name={language.name} icon={language.icon} />
+              {language.frameworks.map((framework: any) => (
+                <SkillIcon name={framework.name} icon={framework.icon} />
+              ))}
+            </div>
+        ))
+      }
+    </div>
+    <h1 class="font-extralight text-lg text-center">Technologies</h1>
+    <div class="flex flex-wrap">
+      {
+        skills.technonologies.map((tech: any) => (
+          <SkillIcon name={tech.name} icon={tech.icon} />
+        ))
+      }
+    </div>
+    <h1 class="font-extralight text-lg text-center">Tools</h1>
+    <div class="flex">
+      {
+        skills.tools.map((tool: any) => (
+          <SkillIcon name={tool.name} icon={tool.icon} />
+        ))
+      }
+    </div>
+    <h1 class="font-extralight text-lg text-center">Languages</h1>
+    <div class="flex">
+      {
+        skills.languages.map((language: any) => (
+          <SkillIcon name={language.name} icon={language.icon} />
+        ))
+      }
+    </div>
+  </div>
+</div>

@@ -14,9 +14,9 @@
             transform="matrix(0.749912, 0, 0, 0.750092, 13.314993, 139.502657)" fill="none"
             stroke-linejoin="miter"
             d="M 0.00188468 0.00166514 L 133.017523 0.00166514 L 133.017523 127.986049 L 0.00188468 127.986049 L 0.00188468 0.00166514 "
-            stroke="#ffffff" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
+            stroke="currentcolor" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(33.335386, 209.999986)">
             <g>
                 <path
@@ -24,7 +24,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(118.638594, 212.249986)">
             <g>
                 <path
@@ -32,7 +32,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(159.433917, 212.249986)">
             <g>
                 <path
@@ -40,7 +40,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(200.229241, 212.249986)">
             <g>
                 <path
@@ -48,7 +48,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(241.024564, 212.249986)">
             <g>
                 <path
@@ -56,7 +56,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(281.819887, 212.249986)">
             <g>
                 <path
@@ -64,7 +64,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(322.61521, 212.249986)">
             <g>
                 <path

@@ -17,14 +17,17 @@ const experience = [
     startDate: "June 2022",
     endDate: "Present",
     achievements: [
-    "Led the complete refactoring of the xFactor Portfolio Optimizer backend service for VirtuosoHub, AEG's investment solutions web application.",
-    "Implemented SOLID principles to enhance codebase flexibility and maintainability.",
-    "Introduced unit and end-to-end testing, significantly improving reliability.",
-    "Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities, improving developer intuition of the optimization problem and the program's success.",
-    "Designed and developed Virtuoso's integration with Zendesk, a third-party customer support platform.",
+      "Led the complete refactoring of the xFactor Portfolio Optimizer backend service for VirtuosoHub, AEG's investment solutions web application.",
+      "Implemented SOLID principles to enhance codebase flexibility and maintainability.",
+      "Introduced unit and end-to-end testing, significantly improving reliability.",
+      "Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities, improving developer intuition of the optimization problem and the program's success.",
+      "Designed and developed Virtuoso's integration with Zendesk, a third-party customer support platform.",
     ],
   },
 ];
 ---
 
-<div class="flex gap-4">{experience.map((job) => <JobCard job={job} />)}</div>
+<div class="grid grid-cols-1 md:grid-cols-4">
+  <h1 class="md:col-span-1 font-bold text-lg py-4">Experience</h1>
+  <div class="md:col-span-3 flex flex-col gap-4">{experience.map((job) => <JobCard job={job} />)}</div>
+</div>

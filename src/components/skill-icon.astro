@@ -1,0 +1,10 @@
+---
+import {Icon} from "astro-icon";
+import type { warn } from "astro/dist/core/logger/core";
+const {name, icon} = Astro.props
+---
+<div class="w-1/4 grid justify-items-center gap-1" >
+  <Icon class="w-16 h-16" name={icon}/>
+  <p class="shadow-lg bg-default rounded-full px-2 py-1 text-center text-xs">{name}</p>
+</div>
+
