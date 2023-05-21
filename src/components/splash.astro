@@ -8,6 +8,56 @@ import GitHubCorner from "./github-corner.astro";
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
+interface Technology {
+  name: string;
+  icon: string;
+  category: string;
+  level?: number;
+}
+const technologies: Technology[] = [
+  {
+    name: "Python",
+    icon: "python-original",
+    category: "backend",
+    level: 5,
+  },
+  {
+    name: "TypeScript",
+    icon: "typescript-original",
+    category: "frontend",
+    level: 0,
+  },
+  {
+    name: "React",
+    icon: "react-original",
+    category: "frontend",
+    level: 0,
+  },
+  {
+    name: "astro",
+    icon: "astromark",
+    category: "frontend",
+    level: 0,
+  },
+  {
+    name: "flask",
+    icon: "flask-original",
+    category: "backend",
+    level: 0,
+  },
+  {
+    name: "fastapi",
+    icon: "fastapi-original",
+    category: "backend",
+    level: 0,
+  },
+  {
+    name: "tailwindcss",
+    icon: "tailwindcss-plain",
+    category: "frontend",
+    level: 0,
+  },
+];
 ---
 
 <section class="relative h-full bg-black">
@@ -29,14 +79,25 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
         </div>
       </h2>
       <div
-        id="munatsi"
-        class="w-2/3 max-w-3xl self-start text-white tracking-wide text-right sm:w-10/12 sm:self-auto sm:justify-self-start"
+        class="w-2/3 max-w-3xl self-center tracking-wide text-white sm:w-10/12 sm:self-auto sm:justify-self-center text-center sm:text-right"
       >
         <p>Passionate about building tools.</p>
         <br />
         <br />
-        <p>Python / Flask</p>
-        <p>Typescript / React / Astro</p>
+        <div class="flex gap-4 m-2 justify-center sm:justify-end">
+          {
+            technologies
+              .filter((tech) => tech.category == "backend")
+              .map((tech) => <Icon class="h-12" name={tech.icon} />)
+          }
+        </div>
+        <div class="flex gap-4 m-2 justify-center sm:justify-end">
+          {
+            technologies
+              .filter((tech) => tech.category == "frontend")
+              .map((tech) => <Icon class="h-12" name={tech.icon} />)
+          }
+        </div>
         <br />
         <br />
       </div>

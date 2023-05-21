@@ -40,7 +40,7 @@ const skills = {
   ],
   tools: [
     { name: "VSCode", icon: "vscode-original-wordmark" },
-    { name: "NeoVim", icon: "vim-original" },
+    { name: "NeoVim", icon: "neovim-original" },
   ],
   languages: [
     { name: "English (Native)", icon: "openmoji:flag-united-kingdom" },
@@ -49,14 +49,14 @@ const skills = {
 };
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-4">
+<div class="grid grid-cols-1 sm:grid-cols-4">
   <h1 class="py-4 font-bold text-lg md:col-span-1">Skills</h1>
   <div class="flex flex-col gap-4 md:col-span-3 py-4 rounded-lg bg-offset shadow-lg">
     <h1 class="font-extralight text-lg text-center">Programming Languages & Frameworks</h1>
-    <div class="grid gap-4">
+    <div class="flex flex-col gap-4">
       {
         skills.programmingLanguages.map((language: any) => (
-            <div class="flex">
+            <div class="flex justify-around">
               <SkillIcon name={language.name} icon={language.icon} />
               {language.frameworks.map((framework: any) => (
                 <SkillIcon name={framework.name} icon={framework.icon} />
@@ -66,7 +66,7 @@ const skills = {
       }
     </div>
     <h1 class="font-extralight text-lg text-center">Technologies</h1>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap justify-around">
       {
         skills.technonologies.map((tech: any) => (
           <SkillIcon name={tech.name} icon={tech.icon} />
@@ -74,7 +74,7 @@ const skills = {
       }
     </div>
     <h1 class="font-extralight text-lg text-center">Tools</h1>
-    <div class="flex">
+    <div class="flex justify-around">
       {
         skills.tools.map((tool: any) => (
           <SkillIcon name={tool.name} icon={tool.icon} />
@@ -82,7 +82,7 @@ const skills = {
       }
     </div>
     <h1 class="font-extralight text-lg text-center">Languages</h1>
-    <div class="flex">
+    <div class="flex justify-around">
       {
         skills.languages.map((language: any) => (
           <SkillIcon name={language.name} icon={language.icon} />
