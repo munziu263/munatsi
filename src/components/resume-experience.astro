@@ -1,8 +1,12 @@
 ---
-import JobCard from "~/components/job-card.astro";
+import JobCard from "~/components/job-card2.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+
 const experience = [
   {
-    role: "Software Consultant",
+    jobTitle: "Software Consultant",
     company: "Mallowstreet",
     startDate: "2022",
     endDate: "Present",
@@ -10,9 +14,18 @@ const experience = [
       "Developed a Natural Language Processing program using spaCy to identify and suggest corrections to errors made by the OpenAI automatic speech recognition system, Whisper.",
       "Utilized NLP techniques and phonetic algorithms to match mistranscribed names to individuals and companies in Mallowstreet's CRM system.",
     ],
+    image: {
+        src: "src/assets/munatsi.png",
+        widths: widths,
+        aspectRatio: "1:1",
+        sizes: sizes,
+        loading: "eager",
+        alt: "The mallowstreet logo",
+
+    },
   },
   {
-    role: "Software Developer",
+    jobTitle: "Software Developer",
     company: "Aspen Equity Group",
     startDate: "June 2022",
     endDate: "Present",
@@ -23,11 +36,19 @@ const experience = [
       "Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities, improving developer intuition of the optimization problem and the program's success.",
       "Designed and developed Virtuoso's integration with Zendesk, a third-party customer support platform.",
     ],
+    image: {
+        src: "src/assets/munatsi.png",
+        widths: widths,
+        aspectRatio: "1:1",
+        sizes: sizes,
+        loading: "eager",
+        alt: "The Aspen Equity Group logo",
+    },
   },
 ];
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-4">
   <h1 class="md:col-span-1 font-bold text-lg py-4">Experience</h1>
-  <div class="md:col-span-3 flex flex-col gap-4">{experience.map((job) => <JobCard job={job} />)}</div>
+  <div class="md:col-span-3 md:flex gap-2">{experience.map((job) => <JobCard {...job} />)}</div>
 </div>

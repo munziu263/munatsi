@@ -14,9 +14,9 @@
             transform="matrix(0.750337, 0, 0, 0.750337, 43.933823, 43.933826)" fill="none"
             stroke-linejoin="miter"
             d="M -0.000305816 -0.000309414 L 382.827857 -0.000309414 L 382.827857 382.827853 L -0.000305816 382.827853 L -0.000305816 -0.000309414 "
-            stroke="#ffffff" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
+            stroke="currentcolor" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
     </g>
-    <path fill="#ffffff"
+    <path fill="currentcolor"
         d="M 59.707031 94.875 L 145.207031 94.875 L 145.207031 279.375 L 59.707031 279.375 L 59.707031 94.875 "
         fill-opacity="1" fill-rule="nonzero" />
     <g fill="#000000" fill-opacity="1">
@@ -27,7 +27,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(144.90234, 239.624984)">
             <g>
                 <path
@@ -35,7 +35,7 @@
             </g>
         </g>
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(230.085962, 239.624984)">
             <g>
                 <path

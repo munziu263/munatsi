@@ -14,9 +14,9 @@
             transform="matrix(0.750201, 0, 0, 0.750121, 78.400495, 78.395028)" fill="none"
             stroke-linejoin="miter"
             d="M 0.00246494 -0.000661763 L 290.924331 -0.000661763 L 290.924331 290.94729 L 0.00246494 290.94729 L 0.00246494 -0.000661763 "
-            stroke="#ffffff" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
+            stroke="currentcolor" stroke-width="8" stroke-opacity="1" stroke-miterlimit="4" />
     </g>
-    <g fill="#ffffff" fill-opacity="1">
+    <g fill="currentcolor" fill-opacity="1">
         <g transform="translate(126.041012, 235.124985)">
             <g>
                 <path
