@@ -1,0 +1,62 @@
+---
+import { Icon } from "astro-icon";
+const { degree, university, result, startDate, endDate, icon, link } =
+  Astro.props;
+---
+
+<div class="flex flex-col">
+  <a
+    href={link}
+    class="relative block overflow-hidden rounded-lg border bg-default p-4 sm:p-6 lg:p-8 bg-offset shadow-xl "
+  >
+    <svg
+      class="h-8 w-8 sm:h-10 sm:w-10"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+      <path
+        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+      ></path>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+      ></path>
+    </svg>
+    <span
+      class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-primary via-accent to-secondary"
+    ></span>
+
+    <div class="sm:flex sm:justify-between sm:gap-4">
+      <div>
+        <h3 class="text-md font-bold text-default sm:text-lg">
+          {degree}
+        </h3>
+
+        <p class="mt-1 font-medium text-offset text-xs">{university}</p>
+      </div>
+
+      <div class="hidden sm:block sm:shrink-0">
+        <Icon name={icon} class="h-8 sm:h-10 "/>
+      </div>
+    </div>
+
+    <dl class="flex gap-4 sm:gap-6">
+      <div class="flex flex-col-reverse">
+        <dt class="font-medium text-default text-xs">{startDate}</dt>
+        <dd class="text-offset text-xs">Start Date</dd>
+      </div>
+
+      <div class="flex flex-col-reverse">
+        <dt class="font-medium text-default text-xs">{endDate}</dt>
+        <dd class="text-offset text-xs">End Date</dd>
+      </div>
+    </dl>
+
+    <p class="text-default text-xs">{result}</p>
+  </a>
+</div>

@@ -48,7 +48,6 @@ const experience = [
 ];
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-4">
-  <h1 class="md:col-span-1 font-bold text-lg py-4">Experience</h1>
-  <div class="md:col-span-3 md:flex gap-2">{experience.map((job) => <JobCard {...job} />)}</div>
+<div class="">
+  <div class="flex flex-col gap-2">{experience.map((job) => <JobCard {...job} />)}</div>
 </div>

@@ -1,93 +1,142 @@
 ---
-import SkillIcon from "~/components/skill-icon.astro";
+import SkillCard from "~/components/skill-card.astro";
 
-const skills = {
-  programmingLanguages: [
-    {
-      name: "Python",
-      frameworks: [
-        { name: "Flask", icon: "flask-original" },
-        { name: "FastAPI", icon: "fastapi-original" },
-      ],
-      icon: "python-original",
-    },
-    {
-      name: "Typescript",
-      frameworks: [
-        { name: "React", icon: "react-original" },
-        { name: "Astro", icon: "astroicon" },
-      ],
-      icon: "typescript-original",
-    },
-    {
-      name: "SQL",
-      frameworks: [
-        { name: "MySql", icon: "mysql-original" },
-        { name: "PostgreSQL", icon: "postgresql-original" },
-      ],
-      icon: "sqlite-original",
-    },
-  ],
-  technonologies: [
-    { name: "Linux", icon: "linux-original" },
-    { name: "Git", icon: "git-original" },
-    { name: "GitHub", icon: "github-original" },
-    { name: "Subversion", icon: "subversion-original" },
-    { name: "Redis", icon: "redis-original" },
-    { name: "Docker", icon: "docker-original" },
-    { name: "Tailwind", icon: "tailwindcss-plain" },
-    { name: "Pytest", icon: "pytest-original" },
-  ],
-  tools: [
-    { name: "VSCode", icon: "vscode-original-wordmark" },
-    { name: "NeoVim", icon: "neovim-original" },
-  ],
-  languages: [
-    { name: "English (Native)", icon: "openmoji:flag-united-kingdom" },
-    { name: "Spanish (Conversational)", icon: "openmoji:flag-spain" },
-  ],
-};
+const categories = [
+  {
+    name: "Programming Languages & Frameworks",
+    icon: "ph:code",
+  },
+  {
+    name: "Technologies",
+    icon: "ph:git-fork",
+  },
+  {
+    name: "Tools",
+    icon: "ri:tools-fill",
+  },
+  {
+    name: "Languages",
+    icon: "ion:language",
+  },
+];
+const skills = [
+  {
+    name: "Python",
+    icon: "python-plain",
+    level: 4,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "Flask",
+    icon: "flask-original",
+    level: 3,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "FastAPI",
+    icon: "fastapi-original",
+    level: 3,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "Typescript",
+    icon: "typescript-original",
+    level: 4,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "React",
+    icon: "react-original",
+    level: 3,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "Astro",
+    icon: "astroicon",
+    level: 2,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "sqlite",
+    icon: "sqlite-original",
+    level: 3,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "MySql",
+    icon: "mysql-original",
+    level: 3,
+    category: "Programming Languages & Frameworks",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "postgresql-original",
+    level: 3,
+    category: "Programming Languages & Frameworks",
+  },
+  { name: "Linux", icon: "linux-original", level: 3, category: "Technologies" },
+  { name: "Git", icon: "git-original", level: 3, category: "Technologies" },
+  {
+    name: "GitHub",
+    icon: "github-original",
+    level: 3,
+    category: "Technologies",
+  },
+  {
+    name: "Subversion",
+    icon: "subversion-original",
+    level: 4,
+    category: "Technologies",
+  },
+  { name: "Redis", icon: "redis-original", level: 3, category: "Technologies" },
+  {
+    name: "Docker",
+    icon: "docker-original",
+    level: 2,
+    category: "Technologies",
+  },
+  {
+    name: "Tailwind",
+    icon: "tailwindcss-plain",
+    level: 4,
+    category: "Technologies",
+  },
+  {
+    name: "Pytest",
+    icon: "pytest-original",
+    level: 3,
+    category: "Technologies",
+  },
+  {
+    name: "VSCode",
+    icon: "vscode-original-wordmark",
+    level: 3,
+    category: "Tools",
+  },
+  { name: "NeoVim", icon: "neovim-original", level: 2, category: "Tools" },
+  {
+    name: "English",
+    icon: "openmoji:flag-united-kingdom",
+    level: 5,
+    category: "Languages",
+  },
+  {
+    name: "Spanish",
+    icon: "openmoji:flag-spain",
+    level: 3,
+    category: "Languages",
+  },
+];
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-4">
-  <h1 class="py-4 font-bold text-lg md:col-span-1">Skills</h1>
-  <div class="flex flex-col gap-4 md:col-span-3 py-4 rounded-lg bg-offset shadow-lg">
-    <h1 class="font-extralight text-lg text-center">Programming Languages & Frameworks</h1>
-    <div class="flex flex-col gap-4">
-      {
-        skills.programmingLanguages.map((language: any) => (
-            <div class="flex justify-around">
-              <SkillIcon name={language.name} icon={language.icon} />
-              {language.frameworks.map((framework: any) => (
-                <SkillIcon name={framework.name} icon={framework.icon} />
-              ))}
-            </div>
-        ))
-      }
-    </div>
-    <h1 class="font-extralight text-lg text-center">Technologies</h1>
-    <div class="flex flex-wrap justify-around">
-      {
-        skills.technonologies.map((tech: any) => (
-          <SkillIcon name={tech.name} icon={tech.icon} />
-        ))
-      }
-    </div>
-    <h1 class="font-extralight text-lg text-center">Tools</h1>
-    <div class="flex justify-around">
-      {
-        skills.tools.map((tool: any) => (
-          <SkillIcon name={tool.name} icon={tool.icon} />
-        ))
-      }
-    </div>
-    <h1 class="font-extralight text-lg text-center">Languages</h1>
-    <div class="flex justify-around">
-      {
-        skills.languages.map((language: any) => (
-          <SkillIcon name={language.name} icon={language.icon} />
-        ))
-      }
-    </div>
-  </div>
+<div class="flex flex-col gap-4">
+  {
+    categories.map((category) => (
+      <SkillCard
+        category={category.name}
+        icon={category.icon}
+        skills={skills.filter((skill) => skill.category == category.name)}
+      />
+    ))
+  }
 </div>

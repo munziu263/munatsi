@@ -1,0 +1,116 @@
+---
+import ResumeHead from "~/components/resume-head.astro";
+import JobCard from "~/components/job-card2.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+
+const experience = [
+  {
+    jobTitle: "Software Consultant",
+    company: "Mallowstreet",
+    startDate: "2022",
+    endDate: "Present",
+    achievements: [
+      "Developed a Natural Language Processing program using spaCy to identify and suggest corrections to errors made by the OpenAI automatic speech recognition system, Whisper.",
+      "Utilized NLP techniques and phonetic algorithms to match mistranscribed names to individuals and companies in Mallowstreet's CRM system.",
+    ],
+    image: {
+      src: "src/assets/munatsi.png",
+      widths: widths,
+      aspectRatio: "1:1",
+      sizes: sizes,
+      loading: "eager",
+      alt: "The mallowstreet logo",
+    },
+  },
+  {
+    jobTitle: "Software Developer",
+    company: "Aspen Equity Group",
+    startDate: "June 2022",
+    endDate: "Present",
+    achievements: [
+      "Led the complete refactoring of the xFactor Portfolio Optimizer backend service for VirtuosoHub, AEG's investment solutions web application.",
+      "Implemented SOLID principles to enhance codebase flexibility and maintainability.",
+      "Introduced unit and end-to-end testing, significantly improving reliability.",
+      "Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities, improving developer intuition of the optimization problem and the program's success.",
+      "Designed and developed Virtuoso's integration with Zendesk, a third-party customer support platform.",
+    ],
+    image: {
+      src: "src/assets/munatsi.png",
+      widths: widths,
+      aspectRatio: "1:1",
+      sizes: sizes,
+      loading: "eager",
+      alt: "The Aspen Equity Group logo",
+    },
+  },
+];
+---
+
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+<section class="bg-default">
+  <div
+    class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:me-0 lg:pe-0 lg:ps-8"
+  >
+    <div
+      class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16"
+    >
+      <div class="max-w-xl text-center sm:text-left">
+        <ResumeHead />
+      </div>
+
+      <div class="-mx-6 lg:col-span-2 lg:mx-0">
+        <div class="swiper-container !overflow-hidden">
+          <div class="swiper-wrapper">
+            {
+              experience.map((job) => (
+                <div class="swiper-slide max-w-sm">
+                  <div class="flex h-full flex-col justify-between">
+                    <JobCard {...job} />
+                  </div>
+                </div>
+              ))
+            }
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".swiper-container", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 32,
+      autoplay: {
+        delay: 8000,
+      },
+      breakpoints: {
+        640: {
+          centeredSlides: true,
+          slidesPerView: 1.25,
+        },
+        1024: {
+          centeredSlides: false,
+          slidesPerView: 1.5,
+        },
+      },
+      navigation: {
+        nextEl: ".next-button",
+        prevEl: ".prev-button",
+      },
+    });
+  });
+</script>

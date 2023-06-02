@@ -1,0 +1,30 @@
+---
+import EducationCard from "~/components/education-card.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+
+const experience = [
+  {
+    degree: "MSc International Relations Theory",
+    university: "London School of Economics and Political Science",
+    startDate: "2015",
+    endDate: "2016",
+    results: "2:1",
+    icon: "lse",
+    },
+  {
+    degree: "BA Economics",
+    university: "Durham University",
+    startDate: "2011",
+    endDate: "2015",
+    results: "2:1",
+    icon: "durham",
+    },
+
+];
+---
+
+<div class="">
+  <div class="flex flex-col gap-2">{experience.map((degree) => <EducationCard {...degree} />)}</div>
+</div>

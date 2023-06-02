@@ -1,7 +1,14 @@
 ---
 import Badge from "~/components/badge.astro";
+import { Picture } from "@astrojs/image/components";
+import munatsiImage from "~/assets/munatsi.png";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
 const name = "Munatsi Ziumbe";
 const location = "Barcelona, Spain";
+const summary =
+  "A driven and curious full-stack software engineer with 1 year of professional experience, passionate about building tools and implementing software development best practices.";
 const contactDetails = [
   {
     name: "email",
@@ -21,14 +28,40 @@ const contactDetails = [
 ];
 ---
 
-<div class="mt-4 flex flex-col gap-1">
-  <h1 class="gradient-text text-center md:self-center font-bold text-6xl">{name}</h1>
-  <h3 class="text-center md:self-center font-bold text-accent">{location}</h3>
-  <div class="flex flex-col gap-2 mx-auto md:flex-row md:self-center">
-    {
-      contactDetails.map((contact) => (
-        <Badge icon={contact.icon} text={contact.value} />
-      ))
-    }
+<section class="">
+  <div
+    class=""
+  >
+    <div class="mx-auto max-w-xl">
+      <Picture
+        slot="eyebrow"
+        class="h-32 rounded-full object-cover mb-4"
+        src={munatsiImage}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="Munatsi's head shot floating in space"
+      />
+      <h1 class="font-extrabold text-4xl sm:text-6xl">
+        munatsi
+        <strong class="gradient-text font-extrabold"> ziumbe</strong>
+      </h1>
+
+      <h3 class=" font-bold text-accent md:self-center">
+        {location}
+      </h3>
+
+      <p class="sm:text-xl/relaxed mt-4">
+        {summary}
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        {
+          contactDetails.map((contact) => (
+            <Badge icon={contact.icon} text={contact.value} />
+          ))
+        }
+      </div>
+    </div>
   </div>
-</div>
+</section>

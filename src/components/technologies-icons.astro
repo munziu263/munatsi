@@ -1,0 +1,71 @@
+---
+import { Icon } from "astro-icon";
+
+interface Technology {
+  name: string;
+  icon: string;
+  category: string;
+  level?: number;
+}
+const technologies: Technology[] = [
+  {
+    name: "Python",
+    icon: "python-original",
+    category: "backend",
+    level: 5,
+  },
+  {
+    name: "TypeScript",
+    icon: "typescript-original",
+    category: "frontend",
+    level: 0,
+  },
+  {
+    name: "React",
+    icon: "react-original",
+    category: "frontend",
+    level: 0,
+  },
+  {
+    name: "astro",
+    icon: "astromark",
+    category: "frontend",
+    level: 0,
+  },
+  {
+    name: "flask",
+    icon: "flask-original",
+    category: "backend",
+    level: 0,
+  },
+  {
+    name: "fastapi",
+    icon: "fastapi-original",
+    category: "backend",
+    level: 0,
+  },
+  {
+    name: "tailwindcss",
+    icon: "tailwindcss-plain",
+    category: "frontend",
+    level: 0,
+  },
+];
+---
+
+<div class="">
+  <div class="m-2 flex justify-center gap-4">
+    {
+      technologies
+        .filter((tech) => tech.category == "frontend")
+        .map((tech) => <Icon class="h-6 md:h-12" name={tech.icon} />)
+    }
+  </div>
+  <div class="m-2 flex justify-center gap-4">
+    {
+      technologies
+        .filter((tech) => tech.category == "backend")
+        .map((tech) => <Icon class="h-6 md:h-12" name={tech.icon} />)
+    }
+  </div>
+</div>

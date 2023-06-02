@@ -1,0 +1,53 @@
+---
+import { Icon } from "astro-icon";
+import Starfield from "~/components/starfield.astro";
+import GitHubCorner from "./github-corner.astro";
+---
+
+<section class="relative h-full bg-black text-white">
+  <Starfield />
+  <GitHubCorner />
+  <div class="h-full p-4">
+    <div class="relative h-full border">
+      <slot />
+    </div>
+  </div>
+</section>
+
+<noscript>
+  <style>
+    #splash-bg-fallback {
+      display: block;
+    }
+  </style>
+</noscript>
+
+<style>
+  @keyframes float {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 30px, 0);
+    }
+  }
+
+  #astronaut {
+    animation: float linear 2.5s infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #astronaut {
+      @apply animate-none;
+    }
+
+    :global(#starfield) {
+      @apply hidden;
+    }
+
+    #splash-bg-fallback {
+      @apply block;
+    }
+  }
+</style>
