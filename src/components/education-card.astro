@@ -1,16 +1,16 @@
 ---
 import { Icon } from "astro-icon";
-const { degree, university, result, startDate, endDate, icon, link } =
+const { degree, university, results, startDate, endDate, icon, link } =
   Astro.props;
 ---
 
 <div class="flex flex-col">
   <a
     href={link}
-    class="relative block overflow-hidden rounded-lg border bg-default p-4 sm:p-6 lg:p-8 bg-offset shadow-xl "
+    class="relative block overflow-hidden text-offset rounded-lg border bg-default p-4 sm:p-6 lg:p-8 bg-offset shadow-xl "
   >
     <svg
-      class="h-8 w-8 sm:h-10 sm:w-10"
+      class="h-6 w-6 sm:h-8 sm:w-8"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
@@ -55,8 +55,12 @@ const { degree, university, result, startDate, endDate, icon, link } =
         <dt class="font-medium text-default text-xs">{endDate}</dt>
         <dd class="text-offset text-xs">End Date</dd>
       </div>
+
+      <div class="flex flex-col-reverse">
+        <dt class="font-medium text-default text-xs">{results}</dt>
+        <dd class="text-offset text-xs">Class</dd>
+      </div>
     </dl>
 
-    <p class="text-default text-xs">{result}</p>
   </a>
 </div>
