@@ -6,14 +6,14 @@ import ResumeSkills from "~/components/resume-skills.astro";
 import ResumeEducation from "~/components/resume-education.astro";
 ---
 
-<div id="resume" class="w-5/6 mx-auto">
-  <div class="md:flex md:gap-8">
-    <aside class="md:sticky top-0 md:h-screen pt-28">
+<div id="resume" class="w-4/6 mx-auto">
+  <div class="md:flex md:gap-8 md:pt-28">
+    <aside class="md:sticky top-28 md:h-screen">
       <!-- // Fixed Sidebar -->
       <ResumeHead />
     </aside>
 
-    <main class="space-y-4 mt-4 md:mt-0 md:p-28">
+    <main class="space-y-4 mt-4 md:mt-0">
       <!-- // Content -->
       <ResumeExperience />
       <ResumeSkills />
