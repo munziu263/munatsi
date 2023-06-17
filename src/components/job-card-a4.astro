@@ -1,0 +1,44 @@
+---
+import { Picture } from "@astrojs/image/components";
+const { jobTitle, company, achievements, startDate, endDate, image, link } =
+  Astro.props;
+---
+
+<div class="flex flex-col px-4">
+  <a
+    href={link}
+    class="grid grid-cols-12 first-line:relative block overflow-hidden rounded-lg bg-offset shadow dark:shadow-black"
+  >
+    <div class="col-span-3 p-3">
+      <div class="flex justify-between">
+        <div>
+          <h3 class="font-bold text-sm">
+            {jobTitle}
+          </h3>
+          <p class="mt-1 font-medium text-offset text-xs">{company}</p>
+        </div>
+      </div>
+      <dl class="flex gap-6">
+        <div class="flex flex-col-reverse">
+          <dt class="font-medium text-default text-xs">{startDate}</dt>
+          <dd class="text-offset text-xs">Start Date</dd>
+        </div>
+        <div class="flex flex-col-reverse">
+          <dt class="font-medium text-default text-xs">{endDate}</dt>
+          <dd class="text-offset text-xs">End Date</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="col-span-9">
+      <ol class="flex list-disc flex-col gap-1 pl-8 p-2">
+        {
+          achievements.map((text: string, index: number) => (
+            <li class="text-default text-xs">
+              {text}
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </a>
+</div>

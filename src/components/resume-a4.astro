@@ -1,0 +1,24 @@
+---
+import resume from "~/data/resume/full-resume.json";
+import ResumeHead from "./resume-head-a4.astro";
+import ResumeEducation from "./resume-education-a4.astro";
+import ResumeExperience from "./resume-experience-a4.astro";
+import ResumeSkills from "./resume-skills-a4.astro";
+---
+
+
+<div class="book">
+    <div class="page">
+        <div class="subpage">
+            <ResumeHead />
+            <ResumeExperience />
+            <ResumeEducation />
+            <ResumeSkills />
+        </div>
+    </div>
+    <!-- <div class="page">
+        <div class="subpage">
+            <ResumeHead />
+        </div>
+    </div> -->
+</div>

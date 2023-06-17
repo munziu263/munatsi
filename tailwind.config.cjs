@@ -11,6 +11,7 @@ module.exports = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         accent: "var(--color-accent)",
+        offset: "var(--color-text-offset)",
       },
       textColor: {
         default: "var(--color-text)",
@@ -23,6 +24,7 @@ module.exports = {
       },
       borderColor: {
         default: "var(--color-border)",
+        offset: "var(--color-text-offset)",
       },
       animation: {
         text: "text 10s ease infinite",

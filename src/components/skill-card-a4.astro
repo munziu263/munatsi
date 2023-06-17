@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon";
+import SkillIcon from "~/components/skill-icon-a4.astro";
+const { category, icon, skills } = Astro.props;
+---
+
+<a
+  class="relative flex items-start justify-between rounded-xl bg-offset p-2 shadow"
+  href="#"
+>
+  <div class="text-offset">
+    <!-- ICON -->
+    
+    <!-- Heading -->
+    <h3 class="font-bold text-default text-xs flex gap-2">
+      <Icon name={icon} class="h-5 w-5" /> {category}
+    </h3>
+    <!-- List of skills -->
+    <div class="flex flex-wrap gap-2 pt-2 text-default">
+      {skills.map((skill: any) => <SkillIcon {...skill} />)}
+    </div>
+  </div>
+</a>

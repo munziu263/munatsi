@@ -1,0 +1,67 @@
+---
+import Badge from "~/components/badge.astro";
+import { Picture } from "@astrojs/image/components";
+import munatsiImage from "~/assets/munatsi.png";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+const name = "Munatsi Ziumbe";
+const location = "Barcelona, Spain";
+const summary =
+  "Passionate self-taught software engineer with experience as a software consultant and a diverse skill set developed over 6 years in the Coca-Cola System. Driven by curiosity and a love for building, I am eager to apply my expertise to software engineering projects.";
+const contactDetails = [
+  {
+    name: "email",
+    value: "munziu@gmail.com",
+    icon: "email",
+  },
+  {
+    name: "mobile",
+    value: "+34 681 013 134",
+    icon: "cellphone",
+  },
+  {
+    name: "github",
+    value: "github.com/munziu263",
+    icon: "github",
+  },
+];
+---
+
+<section class="">
+  <div class="px-4">
+    <div class="grid grid-cols-12 gap-x-2 p-2 px-4 gap-y-4 bg-default shadow shadow-black rounded-lg">
+      <div class="col-span-12 flex justify-center gap-4 text-xs">
+        {
+          contactDetails.map((contact) => (
+            <Badge icon={contact.icon} text={contact.value} />
+          ))
+        }
+      </div>
+      <div class="col-span-2 justify-self-center">
+        <Picture
+          slot="eyebrow"
+          class="h-16 mt-4 rounded-full object-cover"
+          src={munatsiImage}
+          widths={widths}
+          sizes={sizes}
+          loading="eager"
+          alt="Munatsi's head shot floating in space"
+        />
+      </div>
+      <div class="col-span-3 self-start">
+        <h1 class="font-extrabold text-4xl">
+          munatsi
+          <strong class="font-extrabold text-primary"> <br/> ziumbe</strong>
+        </h1>
+        <h3 class="font-bold text-accent text-sm md:self-center">
+          {location}
+        </h3>
+      </div>
+      <span class="col-span-1"></span>
+      <p class="col-span-6 text-right self-center px-4 text-xs max-w-[50ch]">
+        {summary}
+      </p>
+    </div>
+  </div>
+</section>

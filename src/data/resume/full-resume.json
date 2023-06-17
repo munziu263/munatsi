@@ -1,0 +1,355 @@
+{
+  "basics": {
+    "name": "Munatsi Ziumbe",
+    "label": "Software Engineer",
+    "image": "./assets/munatsi.png",
+    "email": "munziu@gmail.com",
+    "phone": "+34681013134",
+    "url": "https://munatsi.ziumbe.com",
+    "summary": "Passionate self-taught software engineer with experience as a software consultant and a diverse skill set developed over 6 years in corporate communication and enterprise risk management in the Coca-Cola System. Driven by curiosity and a love for building, I am eager to apply my expertise to software engineering projects.",
+    "location": {
+      "countryCode": "ES",
+      "address": "Barcelona, Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "munziu",
+        "url": "https://www.linkedin.com/in/munziu/"
+      },
+      {
+        "network": "GitHub",
+        "username": "munziu263",
+        "url": "https://github.com/munziu263"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "jobTitle": "Software Consultant",
+      "company": "Mallowstreet",
+      "startDate": "2022",
+      "endDate": "Present",
+      "achievements": [
+        "Developed a Natural Language Processing program using spaCy to identify and suggest corrections to errors made by the OpenAI automatic speech recognition system, Whisper.",
+        "Utilized NLP techniques and phonetic algorithms to match mistranscribed names to individuals and companies in Mallowstreet's CRM system."
+      ],
+      "image": {
+        "src": "./assets/munatsi.png",
+        "alt": "The mallowstreet logo"
+      },
+      "link": "https://mallowstreet.com/"
+    },
+    {
+      "jobTitle": "Software Developer",
+      "company": "Aspen Equity Group",
+      "startDate": "June 2022",
+      "endDate": "Present",
+      "achievements": [
+        "Led the complete refactoring of the xFactor Portfolio Optimizer backend service for VirtuosoHub, AEG's investment solutions web application.",
+        "Implemented SOLID principles to enhance codebase flexibility and maintainability.",
+        "Introduced unit and end-to-end testing, significantly improving reliability.",
+        "Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities, improving developer intuition of the optimization problem and the program's success.",
+        "Designed and developed Virtuoso's integration with Zendesk, a third-party customer support platform."
+      ],
+      "image": {
+        "src": "./src/assets/munatsi.png",
+        "alt": "The Aspen Equity Group logo"
+      },
+      "link": "https://aspenequitygroup.com/"
+    },
+    {
+      "jobTitle": "Group Risk Management Specialist",
+      "company": "Equatorial Coca-Cola Bottling Company",
+      "startDate": "2020",
+      "endDate": "Present",
+      "achievements": [
+        "Simplified reporting of risk ratings by reverse engineering and redesigning a Risk Map inherited from a consulting company, giving the risk team control over its definition and design.",
+        "Automated the generation of the graphical representation of the Risk Map using Excel functions and tables, streamlining the reporting process.",
+        "Led a comprehensive update of the company's aggregate risk assessment through interviews with Executive leaders and a survey, gathering valuable insights.",
+        "Utilized a Python script to analyze survey results, facilitating risk level determination and supporting decision-making.",
+        "Directed the development of new and refined existing risk reports, collaborating with leaders across business functions, coordinating thought exercises, and ensuring effective coordination in creating actionable risk reports and associated action plans.",
+        "Collaborated with leaders across business functions to define risk reports and action plans, facilitating thought exercises and coordination.",
+        "Demonstrated exceptional communication skills when engaging with high-level stakeholders, effectively conveying the importance of risk management initiatives and generating support."
+      ],
+      "image": {
+        "src": "./src/icons/eccbc.png",
+        "alt": "The Aspen Equity Group logo"
+      },
+      "link": "https://eccbc.com/"
+    },
+    {
+      "jobTitle": "Public Affairs Analyst",
+      "company": "Equatorial Coca-Cola Bottling Company",
+      "startDate": "2017",
+      "endDate": "2020",
+      "achievements": [
+        "Independently produced the company's annual report, including content collection, writing, editing, and managing the design process.",
+        "Split the annual report into an ESG-focused public report, compliant with European standards on non-financial information reporting, and an At A Glance report on CSR activities and company developments.",
+        "Designed company brand templates and played a key role in revamping the brand materials.",
+        "Developed the company's ESG Impact strategy, focusing on plastic recycling, including defining pillars, key commitments, and color scheme.",
+        "Led Crisis Management training for executives across countries, ensuring preparedness for potential crises.",
+        "Managed communication during a complex business restructuring in West Africa, including stakeholder engagement and support to local leaders.",
+        "Contributed to the development of the company's LinkedIn strategy, resulting in a significant following of over 35,000 followers."
+      ],
+      "image": {
+        "src": "./src/icons/eccbc.png",
+        "alt": "Equatorial Coca-Cola Bottling Company logo"
+      },
+      "link": "https://eccbc.com/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "icon": "python-plain",
+      "level": 4,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "Flask",
+      "icon": "flask-original",
+      "level": 3,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "FastAPI",
+      "icon": "fastapi-original",
+      "level": 3,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "Typescript",
+      "icon": "typescript-original",
+      "level": 4,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "React",
+      "icon": "react-original",
+      "level": 3,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "Astro",
+      "icon": "astroicon",
+      "level": 2,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "sqlite",
+      "icon": "sqlite-original",
+      "level": 3,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "MySql",
+      "icon": "mysql-original",
+      "level": 3,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql-original",
+      "level": 3,
+      "category": {
+        "name": "Programming Languages & Frameworks",
+        "icon": "ph:code"
+      }
+    },
+    {
+      "name": "Linux",
+      "icon": "linux-original",
+      "level": 3,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "Git",
+      "icon": "git-original",
+      "level": 3,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "GitHub",
+      "icon": "github-original",
+      "level": 3,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "Subversion",
+      "icon": "subversion-original",
+      "level": 4,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "Redis",
+      "icon": "redis-original",
+      "level": 3,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "Docker",
+      "icon": "docker-original",
+      "level": 2,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "Tailwind",
+      "icon": "tailwindcss-plain",
+      "level": 4,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "Pytest",
+      "icon": "pytest-original",
+      "level": 3,
+      "category": {
+        "name": "Technologies",
+        "icon": "ph:git-fork"
+      }
+    },
+    {
+      "name": "VSCode",
+      "icon": "vscode-original-wordmark",
+      "level": 3,
+      "category": {
+        "name": "Tools",
+        "icon": "ri:tools-fill"
+      }
+    },
+    {
+      "name": "NeoVim",
+      "icon": "neovim-original",
+      "level": 2,
+      "category": {
+        "name": "Tools",
+        "icon": "ri:tools-fill"
+      }
+    },
+    {
+      "name": "English",
+      "icon": "openmoji:flag-united-kingdom",
+      "level": 5,
+      "category": {
+        "name": "Languages",
+        "icon": "ion:language"
+      }
+    },
+    {
+      "name": "Spanish",
+      "icon": "openmoji:flag-spain",
+      "level": 3,
+      "category": {
+        "name": "Languages",
+        "icon": "ion:language"
+      }
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc International Relations Theory",
+      "university": "London School of Economics and Political Science",
+      "startDate": "2015",
+      "endDate": "2016",
+      "results": "2:1",
+      "icon": "lse"
+    },
+    {
+      "degree": "BA Economics",
+      "university": "Durham University",
+      "startDate": "2011",
+      "endDate": "2015",
+      "results": "2:1",
+      "icon": "durham"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Data Analysis with Python",
+      "issuer": "freeCodeCamp",
+      "startDate": "2021-05-31",
+      "url": "https://www.freecodecamp.org/certification/munziu263/data-analysis-with-python-v7"
+    },
+    {
+      "name": "Introduction to the intellectual enterprises of computer science and the art of programming",
+      "issuer": "CS50",
+      "startDate": "2021-12-31",
+      "url": "https://certificates.cs50.io/d5ecdef5-78d7-488e-8c37-b097ad25ca14"
+    },
+    {
+      "name": "Responsive Web Design",
+      "issuer": "freeCodeCamp",
+      "startDate": "2021-07-31",
+      "url": "https://freecodecamp.org/certification/munziu263/responsive-web-design"
+    },
+    {
+      "name": "JavaScript Algorithms and Data Structures",
+      "issuer": "freeCodeCamp",
+      "startDate": "2021-08-31",
+      "url": "https://freecodecamp.org/certification/munziu263/javascript-algorithms-and-data-structures"
+    },
+    {
+      "name": "Front End Development Libraries",
+      "issuer": "freeCodeCamp",
+      "startDate": "2022-01-31",
+      "url": "https://freecodecamp.org/certification/munziu263/front-end-development-libraries"
+    },
+    {
+      "name": "Back End Development and APIs",
+      "issuer": "freeCodeCamp",
+      "startDate": "2022-02-28",
+      "url": "https://freecodecamp.org/certification/munziu263/back-end-development-and-apis"
+    },
+    {
+      "name": "Machine Learning by Stanford University & DeepLearning.AI ",
+      "issuer": "Coursera",
+      "startDate": "2023-02-28",
+      "url": "https://coursera.org/verify/specialization/HYVNPNF6ENVQ"
+    }
+  ]
+}

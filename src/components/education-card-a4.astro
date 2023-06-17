@@ -1,0 +1,46 @@
+---
+import { Icon } from "astro-icon";
+const { degree, university, results, startDate, endDate, icon, link } =
+  Astro.props;
+---
+
+<div class="flex flex-col">
+  <a
+    href={link}
+    class="relative block overflow-hidden text-offset rounded-lg p-3  bg-offset shadow"
+  >
+    
+
+    <div class="flex justify-between gap-2">
+      <div>
+        <h3 class="text-sm font-bold text-default">
+          {degree}
+        </h3>
+
+        <p class="mt-1 font-medium text-offset text-xs">{university}</p>
+      </div>
+
+      <div class="block shrink-0">
+        <Icon name={icon} class="h-8 sm:h-10 "/>
+      </div>
+    </div>
+
+    <dl class="flex gap-4">
+      <div class="flex flex-col-reverse">
+        <dt class="font-medium text-default text-xs">{startDate}</dt>
+        <dd class="text-offset text-xs">Start Date</dd>
+      </div>
+
+      <div class="flex flex-col-reverse">
+        <dt class="font-medium text-default text-xs">{endDate}</dt>
+        <dd class="text-offset text-xs">End Date</dd>
+      </div>
+
+      <div class="flex flex-col-reverse">
+        <dt class="font-medium text-default text-xs">{results}</dt>
+        <dd class="text-offset text-xs">Class</dd>
+      </div>
+    </dl>
+
+  </a>
+</div>

@@ -1,5 +1,5 @@
 ---
-import EducationCard from "~/components/education-card.astro";
+import EducationCard from "~/components/education-card-a4.astro";
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
@@ -7,7 +7,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 const education = [
   {
     degree: "MSc International Relations Theory",
-    university: "London School of Economics and Political Science",
+    university: "London School of Economics",
     startDate: "2015",
     endDate: "2016",
     results: "2:1",
@@ -25,6 +25,6 @@ const education = [
 ];
 ---
 
-<div class="">
-  <div class="flex flex-col gap-2">{education.map((degree) => <EducationCard {...degree} />)}</div>
+<div class="mt-2">
+  <div class="grid grid-cols-2 gap-2 px-4">{education.map((degree) => <EducationCard {...degree} />)}</div>
 </div>

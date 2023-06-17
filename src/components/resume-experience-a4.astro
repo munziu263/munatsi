@@ -1,0 +1,104 @@
+---
+import JobCard from "~/components/job-card-a4.astro";
+
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+
+const experience = [
+  {
+    jobTitle: "Software Consultant",
+    company: "Mallowstreet",
+    startDate: "2022",
+    endDate: "Present",
+    achievements: [
+      "Developed a Natural Language Processing program using spaCy to identify and suggest corrections to errors made by the OpenAI automatic speech recognition system, Whisper.",
+      "Utilized NLP techniques and phonetic algorithms to match mistranscribed names to individuals and companies in Mallowstreet's CRM system.",
+    ],
+    image: {
+      src: "./src/assets/munatsi.png",
+      widths: widths,
+      aspectRatio: "1:1",
+      sizes: sizes,
+      loading: "eager",
+      alt: "The mallowstreet logo",
+    },
+    link: "https://mallowstreet.com/",
+  },
+  {
+    jobTitle: "Software Developer",
+    company: "Aspen Equity Group",
+    startDate: "June 2022",
+    endDate: "Present",
+    achievements: [
+      "Led the complete refactoring of the xFactor Portfolio Optimizer backend service for VirtuosoHub, AEG's investment solutions web application.",
+      "Implemented SOLID principles to enhance codebase flexibility and maintainability.",
+      "Introduced unit and end-to-end testing, significantly improving reliability.",
+      "Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities, improving developer intuition of the optimization problem and the program's success.",
+      "Designed and developed Virtuoso's integration with Zendesk, a third-party customer support platform.",
+    ],
+    image: {
+      src: "./src/assets/munatsi.png",
+      widths: widths,
+      aspectRatio: "1:1",
+      sizes: sizes,
+      loading: "eager",
+      alt: "The Aspen Equity Group logo",
+    },
+    // link: "https://aspenequitygroup.com/"
+  },
+  {
+    jobTitle: "Group Risk Management Specialist",
+    company: "Equatorial Coca-Cola Bottling Company",
+    startDate: "2020",
+    endDate: "Present",
+    achievements: [      
+      "Simplified reporting of risk ratings by reverse engineering and redesigning a Risk Map inherited from a consulting company, giving the risk team control over its definition and design.",
+      "Automated the generation of the graphical representation of the Risk Map using Excel functions and tables, streamlining the reporting process.",
+      "Led a comprehensive update of the company's aggregate risk assessment through interviews with Executive leaders and a survey, gathering valuable insights.",
+      "Utilized a Python script to analyze survey results, facilitating risk level determination and supporting decision-making.",
+      "Directed the development of new and refined existing risk reports, collaborating with leaders across business functions, coordinating thought exercises, and ensuring effective coordination in creating actionable risk reports and associated action plans.",
+      "Collaborated with leaders across business functions to define risk reports and action plans, facilitating thought exercises and coordination.",
+      "Demonstrated exceptional communication skills when engaging with high-level stakeholders, effectively conveying the importance of risk management initiatives and generating support.",
+    ],
+    image: {
+      src: "./src/icons/eccbc.png",
+      widths: widths,
+      aspectRatio: "1:1",
+      sizes: sizes,
+      loading: "eager",
+      alt: "ECCBC logo",
+    },
+    link: "https://eccbc.com/",
+  },
+  {
+    jobTitle: "Public Affairs Analyst",
+    company: "Equatorial Coca-Cola Bottling Company",
+    startDate: "2017",
+    endDate: "2020",
+    achievements: [
+      "Independently produced the company's annual report, including content collection, writing, editing, and managing the design process.",
+      "Split the annual report into an ESG-focused public report, compliant with European standards on non-financial information reporting, and an At A Glance report on CSR activities and company developments.",
+      "Designed company brand templates and played a key role in revamping the brand materials.",
+      "Developed the company's ESG Impact strategy, focusing on plastic recycling, including defining pillars, key commitments, and color scheme.",
+      "Led Crisis Management training for executives across countries, ensuring preparedness for potential crises.",
+      "Managed communication during a complex business restructuring in West Africa, including stakeholder engagement and support to local leaders.",
+      "Contributed to the development of the company's LinkedIn strategy, resulting in a significant following of over 35,000 followers.",
+    ],
+    image: {
+      src: "./src/icons/eccbc.png",
+      widths: widths,
+      aspectRatio: "1:1",
+      sizes: sizes,
+      loading: "eager",
+      alt: "Equatorial Coca-Cola Bottling Company logo",
+    },
+    link: "https://eccbc.com/",
+  },
+];
+---
+
+<div class="">
+  <div class="flex flex-col gap-2 mt-2">
+    {experience.map((job) => <JobCard {...job} />)}
+  </div>
+</div>
