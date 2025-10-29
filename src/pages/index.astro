@@ -1,17 +1,27 @@
 ---
 import "@fontsource/inter/variable.css";
+import { getCollection } from "astro:content";
 import Header from "~/components/header.astro";
-import HeroLogo from "~/components/hero-logo.astro";
-import Banner from "~/components/banner.astro";
-import Resume from "~/components/resume.astro";
-import Splash from "~/components/splash2.astro";
+import Container from "~/components/container.astro";
+import Card from "~/components/card.astro";
+import ProjectCard from "~/components/project-card.astro";
 import "~/styles/index.css";
-import TechnologiesIcons from "~/components/technologies-icons.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
-  "Hi, my name is Munatsi Ziumbe. I’m a software developer who is passionate about building tools that solve day-to-day problems for people.";
+  "Hi, my name is Munatsi Ziumbe. I'm a software developer who is passionate about building tools that solve day-to-day problems for people.";
+
+// Get featured projects and latest blog posts
+const projects = await getCollection("projects");
+const featuredProjects = projects.filter((p) => p.data.featured).slice(0, 3);
+
+const blogPosts = await getCollection("blog", ({ data }) => {
+  return !data.draft && data.date < new Date();
+});
+const latestPosts = blogPosts
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 2);
 ---
 
 <!DOCTYPE html>
@@ -22,7 +32,7 @@ const description =
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
-    <title>Munatsi Ziumbe</title>
+    <title>Munatsi Ziumbe - Software Developer</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
@@ -61,13 +71,105 @@ const description =
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
     <Header />
-    <Splash>
-      <Banner>
-        <HeroLogo slot="headline" />
-        <p slot="tagline" class="text-sm sm:text-lg">Passionate about building tools.</p>
-        <TechnologiesIcons slot="icons" />
-      </Banner>
-    </Splash>
-    <Resume />
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32">
+      <Container>
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6">
+            <span class="gradient-text">Munatsi Ziumbe</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-offset font-medium mb-8">
+            Software Developer & Builder
+          </p>
+          <p class="text-lg text-offset max-w-2xl mx-auto mb-12 leading-relaxed">
+            {description}
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a
+              href="/resume"
+              class="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors duration-200"
+            >
+              View Resume
+            </a>
+            <a
+              href="/projects"
+              class="px-6 py-3 border border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
+            >
+              See Projects
+            </a>
+            <a
+              href="/blog"
+              class="px-6 py-3 border border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
+            >
+              Read Blog
+            </a>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <!-- Featured Projects Section -->
+    {featuredProjects.length > 0 && (
+      <section class="py-20 md:py-32 bg-offset">
+        <Container>
+          <div class="flex justify-between items-end mb-12">
+            <div>
+              <h2 class="text-3xl md:text-5xl font-bold text-default mb-4">Featured Projects</h2>
+              <p class="text-lg text-offset">Building tools that solve real problems</p>
+            </div>
+            <a href="/projects" class="hidden md:flex items-center text-primary font-medium hover:text-secondary transition-colors">
+              View all
+              <svg class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredProjects.map((project) => (
+              <ProjectCard
+                title={project.data.title}
+                description={project.data.description}
+                tech={project.data.tech}
+                github={project.data.github}
+                demo={project.data.demo}
+                image={project.data.image}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
+    )}
+
+    <!-- Latest Blog Posts Section -->
+    {latestPosts.length > 0 && (
+      <section class="py-20 md:py-32">
+        <Container>
+          <div class="flex justify-between items-end mb-12">
+            <div>
+              <h2 class="text-3xl md:text-5xl font-bold text-default mb-4">Latest from Blog</h2>
+              <p class="text-lg text-offset">Thoughts on development and technology</p>
+            </div>
+            <a href="/blog" class="hidden md:flex items-center text-primary font-medium hover:text-secondary transition-colors">
+              View all
+              <svg class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {latestPosts.map((post) => (
+              <Card
+                title={post.data.title}
+                href={`/blog/${post.slug}`}
+                image={post.data.image}
+                description={post.data.description}
+                date={post.data.date.toDateString()}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
+    )}
   </body>
 </html>

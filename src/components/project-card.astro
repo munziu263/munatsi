@@ -1,0 +1,73 @@
+---
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+
+interface Props {
+    title: string;
+    description: string;
+    tech: string[];
+    github?: string;
+    demo?: string;
+    image?: {
+        src: string;
+        alt: string;
+    };
+}
+
+const { title, description, tech, github, demo, image } = Astro.props;
+---
+
+<article class="h-full bg-default border border-default rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary">
+    {image && (
+        <div class="aspect-video overflow-hidden">
+            <Image
+                src={image.src}
+                class="w-full h-full object-cover"
+                width={640}
+                height={360}
+                aspectRatio={16/9}
+                sizes="100vw"
+                alt={image.alt}
+            />
+        </div>
+    )}
+    <div class="p-6">
+        <h3 class="text-xl font-bold text-default">{title}</h3>
+        <p class="mt-3 text-sm text-offset leading-relaxed">{description}</p>
+
+        {tech && tech.length > 0 && (
+            <div class="mt-4 flex flex-wrap gap-2">
+                {tech.map((technology) => (
+                    <span class="px-3 py-1 text-xs font-medium bg-offset text-primary rounded-full border border-default">
+                        {technology}
+                    </span>
+                ))}
+            </div>
+        )}
+
+        <div class="mt-6 flex gap-4">
+            {github && (
+                <a
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-secondary transition-colors"
+                >
+                    <Icon pack="mdi" name="github" class="w-5 h-5" />
+                    View Code
+                </a>
+            )}
+            {demo && (
+                <a
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-secondary transition-colors"
+                >
+                    <Icon pack="mdi" name="open-in-new" class="w-5 h-5" />
+                    Live Demo
+                </a>
+            )}
+        </div>
+    </div>
+</article>
