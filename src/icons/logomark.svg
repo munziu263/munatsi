@@ -2,7 +2,7 @@
     zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="500"
     preserveAspectRatio="xMidYMid slice" version="1.0">
     <defs>
-        <g />
+        
         <clipPath id="e81b7b0631">
             <path
                 d="M 78.402344 78.394531 L 296.652344 78.394531 L 296.652344 296.640625 L 78.402344 296.640625 Z M 78.402344 78.394531 "

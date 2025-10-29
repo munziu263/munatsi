@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import Container from "~/components/container.astro";
+import Layout from "~/layouts/Layout.astro";
+import ProjectCard from "~/components/project-card.astro";
+
+const projects = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout>
+  <Container>
+    <div class="py-16 md:py-24">
+      <div class="mb-12">
+        <h1 class="gradient-text font-extrabold tracking-tight text-5xl md:text-7xl mb-4">
+          Projects
+        </h1>
+        <p class="text-lg text-offset max-w-2xl">
+          A collection of projects I've built, exploring various technologies and solving interesting problems.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedProjects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            tech={project.data.tech}
+            github={project.data.github}
+            demo={project.data.demo}
+            image={project.data.image}
+          />
+        ))}
+      </div>
+    </div>
+  </Container>
+</Layout>

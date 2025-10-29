@@ -1,28 +1,25 @@
 ---
-import "@fontsource/inter/variable.css";
+import "@fontsource-variable/inter";
+import { Picture } from "astro:assets";
 import Header from "~/components/header.astro";
-import HeroLogo from "~/components/hero-logo.astro";
-import Banner from "~/components/banner.astro";
-import Resume from "~/components/resume.astro";
-import Splash from "~/components/splash2.astro";
+import munatsiImage from "~/assets/munatsi.png";
 import "~/styles/index.css";
-import TechnologiesIcons from "~/components/technologies-icons.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
-  "Hi, my name is Munatsi Ziumbe. I’m a software developer who is passionate about building tools that solve day-to-day problems for people.";
+  "Hi, my name is Munatsi Ziumbe. I'm a software developer who is passionate about building tools that solve day-to-day problems for people.";
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<html lang="en" class="h-screen overflow-hidden" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
-    <title>Munatsi Ziumbe</title>
+    <title>Munatsi Ziumbe - Software Developer</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
@@ -57,17 +54,45 @@ const description =
         });
     </script>
   </head>
-  <body
-    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
-  >
+  <body class="h-screen overflow-hidden bg-default text-default">
     <Header />
-    <Splash>
-      <Banner>
-        <HeroLogo slot="headline" />
-        <p slot="tagline" class="text-sm sm:text-lg">Passionate about building tools.</p>
-        <TechnologiesIcons slot="icons" />
-      </Banner>
-    </Splash>
-    <Resume />
+
+    <!-- Full-screen Hero -->
+    <div class="h-screen flex items-center justify-center">
+      <div class="text-center">
+        <Picture
+          src={munatsiImage}
+          widths={[200, 400]}
+          class="h-48 w-48 rounded-full object-cover mx-auto mb-8 border-4 border-primary"
+          alt="Munatsi Ziumbe"
+        />
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-6">
+          <span class="gradient-text">Munatsi Ziumbe</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-offset font-medium mb-12">
+          Software Developer & Builder
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a
+            href="/resume"
+            class="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors duration-200"
+          >
+            View Resume
+          </a>
+          <a
+            href="/projects"
+            class="px-8 py-4 border-2 border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
+          >
+            See Projects
+          </a>
+          <a
+            href="/blog"
+            class="px-8 py-4 border-2 border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
+          >
+            Read Blog
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

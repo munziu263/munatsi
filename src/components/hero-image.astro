@@ -1,15 +1,11 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Picture } from "astro:assets";
 import moonImage from "~/assets/moon.jpg";
-
-const widths = [450, 800, 1200];
-const sizes = "100vw";
 ---
 
 <Picture
   class="h-full w-full object-cover"
   src={moonImage}
-  widths={widths}
-  sizes={sizes}
+  widths={[450, 800, 1200]}
   alt="The ridged surface of the moon"
 />

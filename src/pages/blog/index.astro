@@ -7,14 +7,24 @@ import Card from "~/components/card.astro";
 const blogPosts = await getCollection("blog", ({ data }) => {
   return !data.draft && data.date < new Date();
 });
+
+const sortedPosts = blogPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <Layout>
   <Container>
-    <h1 class="gradient-text font-extrabold tracking-tight text-4xl md:text-6xl mb-8 h-20">Blog</h1>
-    <div class="flex flex-col md:flex-row gap-4 md:gap-8">
-      {
-        blogPosts.map((post) => (
+    <div class="py-16 md:py-24">
+      <div class="mb-12">
+        <h1 class="gradient-text font-extrabold tracking-tight text-5xl md:text-7xl mb-4">
+          Blog
+        </h1>
+        <p class="text-lg text-offset max-w-2xl">
+          Thoughts on development, technology, and building useful tools.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {sortedPosts.map((post) => (
           <Card
             title={post.data.title}
             href={`/blog/${post.slug}`}
@@ -22,8 +32,8 @@ const blogPosts = await getCollection("blog", ({ data }) => {
             description={post.data.description}
             date={post.data.date.toDateString()}
           />
-        ))
-      }
+        ))}
+      </div>
     </div>
   </Container>
 </Layout>

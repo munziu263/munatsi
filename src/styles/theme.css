@@ -1,21 +1,21 @@
 [data-theme="light"] {
-  --color-primary: theme("colors.sky.500");
-  --color-secondary: theme("colors.violet.500");
-  --color-accent: theme("colors.purple.500");
+  --color-primary: theme("colors.indigo.600");
+  --color-secondary: theme("colors.indigo.500");
+  --color-accent: theme("colors.emerald.500");
   --color-text: theme("colors.slate.900");
   --color-text-offset: theme("colors.slate.600");
-  --color-background: theme("colors.slate.50");
-  --color-background-offset: theme("colors.slate.100");
-  --color-border: theme("colors.slate.900" / 10%);
+  --color-background: theme("colors.white");
+  --color-background-offset: theme("colors.slate.50");
+  --color-border: theme("colors.slate.200");
 }
 
 [data-theme="dark"] {
-  --color-primary: theme("colors.sky.400");
-  --color-secondary: theme("colors.violet.400");
-  --color-accent: theme("colors.purple.400");
+  --color-primary: theme("colors.indigo.400");
+  --color-secondary: theme("colors.indigo.500");
+  --color-accent: theme("colors.emerald.400");
   --color-text: theme("colors.slate.50");
   --color-text-offset: theme("colors.slate.400");
-  --color-background: theme("colors.slate.900");
-  --color-background-offset: theme("colors.slate.800");
-  --color-border: theme("colors.slate.50" / 10%);
+  --color-background: theme("colors.slate.950");
+  --color-background-offset: theme("colors.slate.900");
+  --color-border: theme("colors.slate.800");
 }
