@@ -3,7 +3,7 @@ import { Icon } from "astro-icon/components"
 const {text, icon} = Astro.props
 ---
 
-<span class="text-white text-xs bg-gradient-to-r from-accent to-secondary px-2 inline-flex items-center rounded-full ">
+<span class="text-xs text-offset px-2 py-0.5 inline-flex items-center border border-border rounded">
 <Icon pack="mdi" name={icon} class="w-3 h-3 mr-1"/>
   {text}
 </span>

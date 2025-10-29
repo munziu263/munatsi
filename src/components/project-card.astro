@@ -17,7 +17,7 @@ interface Props {
 const { title, description, tech, github, demo, image } = Astro.props;
 ---
 
-<article class="h-full bg-default border border-default rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary">
+<article class="h-full bg-default border border-default rounded overflow-hidden transition-colors hover:border-primary">
     {image && (
         <div class="aspect-video overflow-hidden">
             <Image
@@ -36,7 +36,7 @@ const { title, description, tech, github, demo, image } = Astro.props;
         {tech && tech.length > 0 && (
             <div class="mt-4 flex flex-wrap gap-2">
                 {tech.map((technology) => (
-                    <span class="px-3 py-1 text-xs font-medium bg-offset text-primary rounded-full border border-default">
+                    <span class="px-2 py-0.5 text-xs text-offset border border-border rounded">
                         {technology}
                     </span>
                 ))}
@@ -49,7 +49,7 @@ const { title, description, tech, github, demo, image } = Astro.props;
                     href={github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-secondary transition-colors"
+                    class="inline-flex items-center gap-1.5 text-sm text-offset hover:text-default transition-colors"
                 >
                     <Icon name="mdi:github" class="w-5 h-5" />
                     View Code
@@ -60,7 +60,7 @@ const { title, description, tech, github, demo, image } = Astro.props;
                     href={demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-secondary transition-colors"
+                    class="inline-flex items-center gap-1.5 text-sm text-offset hover:text-default transition-colors"
                 >
                     <Icon name="mdi:open-in-new" class="w-5 h-5" />
                     Live Demo
