@@ -22,12 +22,14 @@ const { jobTitle, company, achievements, startDate, endDate, image, link } =
         <p class="mt-1 font-medium text-offset text-xs">{company}</p>
       </div>
 
-      <div class="hidden sm:block sm:shrink-0">
-        <Picture
-          {...image}
-          class="h-16 w-16 rounded-lg bg-white object-cover shadow-sm"
-        />
-      </div>
+      {image && image.src && typeof image.src !== 'string' && (
+        <div class="hidden sm:block sm:shrink-0">
+          <Picture
+            {...image}
+            class="h-16 w-16 rounded-lg bg-white object-cover shadow-sm"
+          />
+        </div>
+      )}
     </div>
 
     <dl class="flex gap-4 sm:gap-6">
