@@ -1,10 +1,8 @@
 ---
 import Badge from "~/components/badge.astro";
-import { Picture } from "@astrojs/image/components";
+import { Picture } from "astro:assets";
 import munatsiImage from "~/assets/munatsi.png";
 
-const widths = [450, 800];
-const sizes = "(min-width: 640px) 42vw, 67vw";
 const name = "Munatsi Ziumbe";
 const location = "Barcelona, Spain";
 const summary =
@@ -37,8 +35,7 @@ const contactDetails = [
         slot="eyebrow"
         class="h-32 rounded-full object-cover mb-4"
         src={munatsiImage}
-        widths={widths}
-        sizes={sizes}
+        widths={[450, 800]}
         loading="eager"
         alt="Munatsi's head shot floating in space"
       />

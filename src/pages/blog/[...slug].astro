@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "~/layouts/Layout.astro";
 import BlogLayout from "~/layouts/BlogLayout.astro";
@@ -18,18 +18,13 @@ interface Props {
 }
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-const width = 1920;
-const height = 480;
-const sizes = "100vw";
 ---
 
 <Image
   src={entry.data.image.src}
   class=""
-  width={width}
-  height={height}
-  aspectRatio={16 / 9}
-  sizes={sizes}
+  width={1920}
+  height={480}
   alt={entry.data.image.alt}
 />
 <Layout>

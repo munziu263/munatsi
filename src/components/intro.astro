@@ -1,12 +1,9 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import ContentSection from "~/components/content-section.astro";
 
-import { Picture } from "@astrojs/image/components";
+import { Picture } from "astro:assets";
 import munatsiImage from "~/assets/munatsi.png"
-
-const widths = [450, 800];
-const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
 <ContentSection title="munatsi" id="intro">
@@ -14,8 +11,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
         slot="eyebrow"
         class="h-32 object-cover rounded-full"
         src={munatsiImage}
-        widths={widths}
-        sizes={sizes}
+        widths={[450, 800]}
         loading="eager"
         alt="Munatsi's head shot floating in space"
       />

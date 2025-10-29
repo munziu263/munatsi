@@ -1,10 +1,6 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 const {title, date, description, href, image} = Astro.props
-
-const width = 640;
-const height = 360;
-const sizes = "100vw";
 ---
 <a href={href} class="group block">
     <article class="h-full bg-default border border-default rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary hover:-translate-y-1">
@@ -12,10 +8,8 @@ const sizes = "100vw";
             <Image
                 src={image.src}
                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                width={width}
-                height={height}
-                aspectRatio={16/9}
-                sizes={sizes}
+                width={640}
+                height={360}
                 alt={image.alt}
             />
         </div>
