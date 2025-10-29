@@ -1,31 +1,18 @@
 ---
 import "@fontsource-variable/inter";
-import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
 import Header from "~/components/header.astro";
-import Container from "~/components/container.astro";
-import Card from "~/components/card.astro";
-import ProjectCard from "~/components/project-card.astro";
+import munatsiImage from "~/assets/munatsi.png";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
   "Hi, my name is Munatsi Ziumbe. I'm a software developer who is passionate about building tools that solve day-to-day problems for people.";
-
-// Get featured projects and latest blog posts
-const projects = await getCollection("projects");
-const featuredProjects = projects.filter((p) => p.data.featured).slice(0, 3);
-
-const blogPosts = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.date < new Date();
-});
-const latestPosts = blogPosts
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 2);
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<html lang="en" class="h-screen overflow-hidden" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -67,109 +54,45 @@ const latestPosts = blogPosts
         });
     </script>
   </head>
-  <body
-    class="min-h-screen overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
-  >
+  <body class="h-screen overflow-hidden bg-default text-default">
     <Header />
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32">
-      <Container>
-        <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6">
-            <span class="gradient-text">Munatsi Ziumbe</span>
-          </h1>
-          <p class="text-xl md:text-2xl text-offset font-medium mb-8">
-            Software Developer & Builder
-          </p>
-          <p class="text-lg text-offset max-w-2xl mx-auto mb-12 leading-relaxed">
-            {description}
-          </p>
-          <div class="flex flex-wrap gap-4 justify-center">
-            <a
-              href="/resume"
-              class="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors duration-200"
-            >
-              View Resume
-            </a>
-            <a
-              href="/projects"
-              class="px-6 py-3 border border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
-            >
-              See Projects
-            </a>
-            <a
-              href="/blog"
-              class="px-6 py-3 border border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
-            >
-              Read Blog
-            </a>
-          </div>
+    <!-- Full-screen Hero -->
+    <div class="h-screen flex items-center justify-center">
+      <div class="text-center">
+        <Picture
+          src={munatsiImage}
+          widths={[200, 400]}
+          class="h-48 w-48 rounded-full object-cover mx-auto mb-8 border-4 border-primary"
+          alt="Munatsi Ziumbe"
+        />
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-6">
+          <span class="gradient-text">Munatsi Ziumbe</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-offset font-medium mb-12">
+          Software Developer & Builder
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a
+            href="/resume"
+            class="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors duration-200"
+          >
+            View Resume
+          </a>
+          <a
+            href="/projects"
+            class="px-8 py-4 border-2 border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
+          >
+            See Projects
+          </a>
+          <a
+            href="/blog"
+            class="px-8 py-4 border-2 border-default text-default font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors duration-200"
+          >
+            Read Blog
+          </a>
         </div>
-      </Container>
-    </section>
-
-    <!-- Featured Projects Section -->
-    {featuredProjects.length > 0 && (
-      <section class="py-20 md:py-32 bg-offset">
-        <Container>
-          <div class="flex justify-between items-end mb-12">
-            <div>
-              <h2 class="text-3xl md:text-5xl font-bold text-default mb-4">Featured Projects</h2>
-              <p class="text-lg text-offset">Building tools that solve real problems</p>
-            </div>
-            <a href="/projects" class="hidden md:flex items-center text-primary font-medium hover:text-secondary transition-colors">
-              View all
-              <svg class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProjects.map((project) => (
-              <ProjectCard
-                title={project.data.title}
-                description={project.data.description}
-                tech={project.data.tech}
-                github={project.data.github}
-                demo={project.data.demo}
-                image={project.data.image}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
-    )}
-
-    <!-- Latest Blog Posts Section -->
-    {latestPosts.length > 0 && (
-      <section class="py-20 md:py-32">
-        <Container>
-          <div class="flex justify-between items-end mb-12">
-            <div>
-              <h2 class="text-3xl md:text-5xl font-bold text-default mb-4">Latest from Blog</h2>
-              <p class="text-lg text-offset">Thoughts on development and technology</p>
-            </div>
-            <a href="/blog" class="hidden md:flex items-center text-primary font-medium hover:text-secondary transition-colors">
-              View all
-              <svg class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {latestPosts.map((post) => (
-              <Card
-                title={post.data.title}
-                href={`/blog/${post.slug}`}
-                image={post.data.image}
-                description={post.data.description}
-                date={post.data.date.toDateString()}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
-    )}
+      </div>
+    </div>
   </body>
 </html>

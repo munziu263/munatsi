@@ -10,7 +10,7 @@ const description =
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<html lang="en" class="h-screen overflow-hidden" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -53,10 +53,10 @@ const description =
     </script>
   </head>
   <body
-    class="min-h-screen overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
+    class="h-screen overflow-y-auto bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
     <HeaderFixed />
-    <div class="min-h-screen space-y-6 md:space-y-12 px-8 py-20">
+    <div class="px-8 py-20">
         <slot></slot>
     </div>
   </body>
