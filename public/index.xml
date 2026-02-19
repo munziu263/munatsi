@@ -15,4 +15,17 @@
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/munziu263/algorithms-exercises"&gt;Algorithms Exercises&lt;/a&gt;&lt;/strong&gt; — DSA practice&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/munziu263/neovim"&gt;Neovim Config&lt;/a&gt;&lt;/strong&gt; — My editor setup&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;More to come as I build in public.&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;em&gt;More to come as I build in public.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Resume</title><link>https://munatsi.ziumbe.com/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/resume/</guid><description>&lt;h2 id="munatsi-ziumbe"&gt;Munatsi Ziumbe&lt;/h2&gt;
+&lt;p&gt;Software developer based in Reading, UK. Career changer — from corporate communications and risk management to building portfolio optimisation systems.&lt;/p&gt;
+&lt;p&gt;📧 &lt;a href="mailto:munziu@gmail.com"&gt;munziu@gmail.com&lt;/a&gt; · &lt;a href="https://github.com/munziu263"&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="experience"&gt;Experience&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Software Developer&lt;/strong&gt; — Aspen Equity Group &lt;em&gt;(June 2022 – Present)&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Led the complete refactoring of the xFactor Portfolio Optimizer backend service for VirtuosoHub, AEG&amp;rsquo;s investment solutions web application&lt;/li&gt;
+&lt;li&gt;Implemented SOLID principles to enhance codebase flexibility and maintainability&lt;/li&gt;
+&lt;li&gt;Introduced unit and end-to-end testing, significantly improving reliability&lt;/li&gt;
+&lt;li&gt;Created developer tools and designed a developer playground in Jupyter Notebooks with plotting capabilities&lt;/li&gt;
+&lt;li&gt;Designed and developed Virtuoso&amp;rsquo;s integration with Zendesk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Software Consultant&lt;/strong&gt; — Mallowstreet &lt;em&gt;(2022)&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
