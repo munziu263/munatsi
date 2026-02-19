@@ -1,0 +1,32 @@
+baseURL = 'https://munatsi.ziumbe.com/'
+languageCode = 'en-gb'
+title = 'Munatsi Ziumbe'
+theme = 'bearblog'
+
+[params]
+  description = 'Software developer, father, writer. Technical notes, reflections, and things I am learning.'
+  dateFormat = '2 January 2006'
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = 'Blog'
+    pageRef = '/posts'
+    weight = 10
+  [[menu.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+  [[menu.main]]
+    name = 'Projects'
+    pageRef = '/projects'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS']
