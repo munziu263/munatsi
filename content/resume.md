@@ -6,7 +6,7 @@ title: "Resume"
 
 Software developer based in Reading, UK. Career changer — from corporate communications and risk management to building portfolio optimisation systems.
 
-📧 munziu@gmail.com · [GitHub](https://github.com/munziu263)
+📧 ziumbesolutions@gmail.com · [GitHub](https://github.com/munziu263)
 
 ---
 

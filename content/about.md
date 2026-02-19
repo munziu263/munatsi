@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+![Munatsi Ziumbe](/munatsi.jpg)
+
 I'm Munatsi — a software developer based near Reading, UK.
 
 I work at [AEG](https://aspenequitygroup.com) building portfolio optimisation systems. Before tech, I spent six years in the Coca-Cola system. Originally from Harare, Zimbabwe.
