@@ -40,6 +40,8 @@ Show alert [Dictionary Value]
 
 The VPS endpoint is only accessible over [Tailscale](https://tailscale.com/) — the phone and VPS are on the same private network, so it's secure without exposing anything to the public internet.
 
+For how the VPS, vault sync, and AI assistant all fit together, see [Setting Up a Shared Workspace with an AI Assistant](/skills/shared-workspace/).
+
 ## Log Format
 
 Every entry follows a standardised format:
