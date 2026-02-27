@@ -11,19 +11,34 @@ category: "personal"
 
 ## How It Works
 
-The iPhone 16 has a dedicated **Action Button** which I've mapped to an Apple Shortcut. The flow:
+The iPhone 16 has a dedicated **Action Button** which I've mapped to an Apple Shortcut called "Log To Clawdbot". The flow:
 
 1. **Press the Action Button** on the side of the phone
-2. **Speak** your log entry (as long as you need)
-3. The Shortcut **records and transcribes** your voice using iOS speech recognition
-4. The transcription is sent as a message to **Chipo** (my AI assistant) via the OpenClaw chat completions API running on a VPS
-5. Chipo receives the text and **appends it** to today's daily note in the Obsidian vault with a timestamp
+2. **Record audio** — speak your log entry
+3. **Transcribe** — iOS speech recognition converts it to text on-device
+4. **POST** the transcription to a `/log` endpoint on the VPS (via Tailscale)
+5. **Chipo** receives it, formats it with a timestamp, appends to today's daily note
+6. **Show alert** — the response is displayed as confirmation
 
-The whole loop — press, speak, transcribed, logged — takes a few seconds. No screen interaction needed beyond the initial button press.
+The whole loop — press, speak, transcribed, logged — takes a few seconds. No typing, no app switching.
 
-## The API
+## The Shortcut (6 steps)
 
-The VPS runs an [OpenClaw](https://github.com/openclaw/openclaw) gateway with an OpenAI-compatible chat completions endpoint. The Shortcut sends a POST request with the transcribed text, and Chipo handles the `/log` command — formatting it and appending to the vault.
+```
+Record audio
+  ↓
+Transcribe [Recorded Audio] to text
+  ↓
+URL: http://<vps-tailscale-ip>:18790/log
+  ↓
+Get contents of [URL]
+  ↓
+Get Value for [msg] in [Contents of URL]
+  ↓
+Show alert [Dictionary Value]
+```
+
+The VPS endpoint is only accessible over [Tailscale](https://tailscale.com/) — the phone and VPS are on the same private network, so it's secure without exposing anything to the public internet.
 
 ## Log Format
 
