@@ -24,6 +24,10 @@ theme = 'bearblog'
     pageRef = '/about'
     weight = 20
   [[menu.main]]
+    name = 'Skills'
+    pageRef = '/skills'
+    weight = 25
+  [[menu.main]]
     name = 'Projects'
     pageRef = '/projects'
     weight = 30

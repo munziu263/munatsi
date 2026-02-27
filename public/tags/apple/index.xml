@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple on Munatsi Ziumbe</title>
+    <link>https://munatsi.ziumbe.com/tags/apple/</link>
+    <description>Recent content in Apple on Munatsi Ziumbe</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://munatsi.ziumbe.com/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Logging via Apple Shortcuts</title>
+      <link>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; One-tap logging from iPhone to Obsidian vault. Captures timestamped log entries throughout the day without opening the app.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When I use it:&lt;/strong&gt; Quick thoughts, task notes, meeting observations, anything worth capturing in the moment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tap the shortcut&lt;/strong&gt; on iPhone home screen&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Type or dictate&lt;/strong&gt; your log entry&lt;/li&gt;&#xA;&lt;li&gt;Entry is appended to today&amp;rsquo;s daily note in the format:&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- YYYY-MM-DD HH:MM:SS - your text here&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;Syncs to VPS via Syncthing → Chipo can read it&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;log-format&#34;&gt;Log Format&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt; 2026-02-27 08:30:00 - Dropped kids at school, Anashe nervous but settled&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt; 2026-02-27 09:15:00 - Started work on dedup bug in selector&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt; 2026-02-27 12:00:00 - Good chat with Michael about AI permissions&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Standardised format means:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

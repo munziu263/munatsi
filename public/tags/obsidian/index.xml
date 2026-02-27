@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obsidian on Munatsi Ziumbe</title>
+    <link>https://munatsi.ziumbe.com/tags/obsidian/</link>
+    <description>Recent content in Obsidian on Munatsi Ziumbe</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://munatsi.ziumbe.com/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Logging via Apple Shortcuts</title>
+      <link>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; One-tap logging from iPhone to Obsidian vault. Captures timestamped log entries throughout the day without opening the app.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When I use it:&lt;/strong&gt; Quick thoughts, task notes, meeting observations, anything worth capturing in the moment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tap the shortcut&lt;/strong&gt; on iPhone home screen&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Type or dictate&lt;/strong&gt; your log entry&lt;/li&gt;&#xA;&lt;li&gt;Entry is appended to today&amp;rsquo;s daily note in the format:&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- YYYY-MM-DD HH:MM:SS - your text here&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;Syncs to VPS via Syncthing → Chipo can read it&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;log-format&#34;&gt;Log Format&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt; 2026-02-27 08:30:00 - Dropped kids at school, Anashe nervous but settled&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt; 2026-02-27 09:15:00 - Started work on dedup bug in selector&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt; 2026-02-27 12:00:00 - Good chat with Michael about AI permissions&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Standardised format means:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Obsidian Vault Statistics &amp; Gamification</title>
+      <link>https://munatsi.ziumbe.com/skills/knowledge-stats/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/skills/knowledge-stats/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; Track knowledge production metrics across an Obsidian vault — note maturity, refinement ratio, log streaks, and connectivity. Gamify the writing habit.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When I use it:&lt;/strong&gt; Daily morning briefings, weekly knowledge reports, motivation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-pipeline&#34;&gt;The Pipeline&lt;/h2&gt;&#xA;&lt;p&gt;Notes move through a maturity pipeline:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;🌱 Seed     → short, rough, just captured&#xA;🌿 Draft    → fleshed out, has some structure&#xA;🌳 Published → refined, linked, ready to share&#xA;🍎 Evergreen → living reference, regularly updated&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;key-metric-refinement-ratio&#34;&gt;Key Metric: Refinement Ratio&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;refinement ratio = edits to existing notes / new notes created&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;gt; 1.0&lt;/strong&gt; = refining more than creating (good)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;lt; 1.0&lt;/strong&gt; = creating more than refining (capture mode)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Target:&lt;/strong&gt; stay above 1.0 over a rolling 7 days&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;quick-run&#34;&gt;Quick Run&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 ~/clawd/scripts/knowledge_stats.py&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Returns JSON with: total notes, maturity breakdown, refinement ratios (7d/30d), log streak, promotable seeds, word count, connectivity stats.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
