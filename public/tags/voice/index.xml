@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shortcuts on Munatsi Ziumbe</title>
-    <link>https://munatsi.ziumbe.com/tags/shortcuts/</link>
-    <description>Recent content in Shortcuts on Munatsi Ziumbe</description>
+    <title>Voice on Munatsi Ziumbe</title>
+    <link>https://munatsi.ziumbe.com/tags/voice/</link>
+    <description>Recent content in Voice on Munatsi Ziumbe</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://munatsi.ziumbe.com/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://munatsi.ziumbe.com/tags/voice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Logging via Apple Shortcuts</title>
       <link>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</link>
