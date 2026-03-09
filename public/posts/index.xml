@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Munatsi Ziumbe</title><link>https://munatsi.ziumbe.com/posts/</link><description>Recent content in Posts on Munatsi Ziumbe</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://munatsi.ziumbe.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello, World</title><link>https://munatsi.ziumbe.com/posts/hello-world/</link><pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/posts/hello-world/</guid><description>&lt;p&gt;I&amp;rsquo;ve had a website before. A few, actually. They always started ambitious and ended neglected.&lt;/p&gt;
-&lt;p&gt;This time I&amp;rsquo;m trying something different: start small, write consistently, let it grow.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m a software developer working on portfolio optimisation systems — Python, React, MySQL, and increasingly GPU programming. I&amp;rsquo;m also a father of four, which means my time is limited and my motivation to use it well is high.&lt;/p&gt;
-&lt;p&gt;This site will be a mix of:&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Munatsi Ziumbe</title>
+    <link>https://munatsi.ziumbe.com/posts/</link>
+    <description>Recent content in Posts on Munatsi Ziumbe</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://munatsi.ziumbe.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, World</title>
+      <link>https://munatsi.ziumbe.com/posts/hello-world/</link>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/posts/hello-world/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had a website before. A few, actually. They always started ambitious and ended neglected.&lt;/p&gt;&#xA;&lt;p&gt;This time I&amp;rsquo;m trying something different: start small, write consistently, let it grow.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a software developer working on portfolio optimisation systems — Python, React, MySQL, and increasingly GPU programming. I&amp;rsquo;m also a father of four, which means my time is limited and my motivation to use it well is high.&lt;/p&gt;&#xA;&lt;p&gt;This site will be a mix of:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

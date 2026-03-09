@@ -1,1 +1,124 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Munatsi Ziumbe</title><link>https://munatsi.ziumbe.com/tags/</link><description>Recent content in Tags on Munatsi Ziumbe</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://munatsi.ziumbe.com/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Apple</title><link>https://munatsi.ziumbe.com/tags/apple/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/apple/</guid><description/></item><item><title>Audio</title><link>https://munatsi.ziumbe.com/tags/audio/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/audio/</guid><description/></item><item><title>Cli</title><link>https://munatsi.ziumbe.com/tags/cli/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/cli/</guid><description/></item><item><title>Gamification</title><link>https://munatsi.ziumbe.com/tags/gamification/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/gamification/</guid><description/></item><item><title>Infrastructure</title><link>https://munatsi.ziumbe.com/tags/infrastructure/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/infrastructure/</guid><description/></item><item><title>Knowledge</title><link>https://munatsi.ziumbe.com/tags/knowledge/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/knowledge/</guid><description/></item><item><title>Logging</title><link>https://munatsi.ziumbe.com/tags/logging/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/logging/</guid><description/></item><item><title>Obsidian</title><link>https://munatsi.ziumbe.com/tags/obsidian/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/obsidian/</guid><description/></item><item><title>Python</title><link>https://munatsi.ziumbe.com/tags/python/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/python/</guid><description/></item><item><title>Shortcuts</title><link>https://munatsi.ziumbe.com/tags/shortcuts/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/shortcuts/</guid><description/></item><item><title>Syncthing</title><link>https://munatsi.ziumbe.com/tags/syncthing/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/syncthing/</guid><description/></item><item><title>Tailscale</title><link>https://munatsi.ziumbe.com/tags/tailscale/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/tailscale/</guid><description/></item><item><title>Transcription</title><link>https://munatsi.ziumbe.com/tags/transcription/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/transcription/</guid><description/></item><item><title>Voice</title><link>https://munatsi.ziumbe.com/tags/voice/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/voice/</guid><description/></item><item><title>Vps</title><link>https://munatsi.ziumbe.com/tags/vps/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/vps/</guid><description/></item><item><title>Whisper</title><link>https://munatsi.ziumbe.com/tags/whisper/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/tags/whisper/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Munatsi Ziumbe</title>
+    <link>https://munatsi.ziumbe.com/tags/</link>
+    <description>Recent content in Tags on Munatsi Ziumbe</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://munatsi.ziumbe.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apple</title>
+      <link>https://munatsi.ziumbe.com/tags/apple/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/apple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Audio</title>
+      <link>https://munatsi.ziumbe.com/tags/audio/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/audio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cli</title>
+      <link>https://munatsi.ziumbe.com/tags/cli/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gamification</title>
+      <link>https://munatsi.ziumbe.com/tags/gamification/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/gamification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure</title>
+      <link>https://munatsi.ziumbe.com/tags/infrastructure/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge</title>
+      <link>https://munatsi.ziumbe.com/tags/knowledge/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/knowledge/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logging</title>
+      <link>https://munatsi.ziumbe.com/tags/logging/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/logging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>https://munatsi.ziumbe.com/tags/obsidian/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://munatsi.ziumbe.com/tags/python/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shortcuts</title>
+      <link>https://munatsi.ziumbe.com/tags/shortcuts/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/shortcuts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syncthing</title>
+      <link>https://munatsi.ziumbe.com/tags/syncthing/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/syncthing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tailscale</title>
+      <link>https://munatsi.ziumbe.com/tags/tailscale/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/tailscale/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transcription</title>
+      <link>https://munatsi.ziumbe.com/tags/transcription/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/transcription/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voice</title>
+      <link>https://munatsi.ziumbe.com/tags/voice/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/voice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vps</title>
+      <link>https://munatsi.ziumbe.com/tags/vps/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/vps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Whisper</title>
+      <link>https://munatsi.ziumbe.com/tags/whisper/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/tags/whisper/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

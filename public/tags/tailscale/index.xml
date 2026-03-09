@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tailscale on Munatsi Ziumbe</title><link>https://munatsi.ziumbe.com/tags/tailscale/</link><description>Recent content in Tailscale on Munatsi Ziumbe</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://munatsi.ziumbe.com/tags/tailscale/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting Up a Shared Workspace with an AI Assistant</title><link>https://munatsi.ziumbe.com/skills/shared-workspace/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/skills/shared-workspace/</guid><description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; A VPS that acts as a shared workspace between me and my AI assistant. My notes, calendar, and daily operations live there — I write in Obsidian on my Mac or phone, and Chipo (the AI) can read, organise, and build on top of it.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Why:&lt;/strong&gt; An AI assistant is more useful when it has persistent access to your actual context — not just a chat window. By giving Chipo access to my Obsidian vault, calendar, and task list, it can do things like prepare standup summaries, track habits, manage appointments, and produce meeting minutes without me having to explain everything from scratch each session.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tailscale on Munatsi Ziumbe</title>
+    <link>https://munatsi.ziumbe.com/tags/tailscale/</link>
+    <description>Recent content in Tailscale on Munatsi Ziumbe</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://munatsi.ziumbe.com/tags/tailscale/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up a Shared Workspace with an AI Assistant</title>
+      <link>https://munatsi.ziumbe.com/skills/shared-workspace/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/skills/shared-workspace/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; A VPS that acts as a shared workspace between me and my AI assistant. My notes, calendar, and daily operations live there — I write in Obsidian on my Mac or phone, and Chipo (the AI) can read, organise, and build on top of it.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why:&lt;/strong&gt; An AI assistant is more useful when it has persistent access to your actual context — not just a chat window. By giving Chipo access to my Obsidian vault, calendar, and task list, it can do things like prepare standup summaries, track habits, manage appointments, and produce meeting minutes without me having to explain everything from scratch each session.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

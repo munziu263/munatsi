@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Voice on Munatsi Ziumbe</title><link>https://munatsi.ziumbe.com/tags/voice/</link><description>Recent content in Voice on Munatsi Ziumbe</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://munatsi.ziumbe.com/tags/voice/index.xml" rel="self" type="application/rss+xml"/><item><title>Daily Logging via Apple Shortcuts</title><link>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</guid><description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; One-tap voice logging from iPhone to Obsidian vault. Press a button, speak, and it lands as a timestamped entry in today&amp;rsquo;s daily note.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;When I use it:&lt;/strong&gt; Quick thoughts, task notes, meeting observations, anything worth capturing in the moment — without opening an app or typing.&lt;/p&gt;
-&lt;h2 id="how-it-works"&gt;How It Works&lt;/h2&gt;
-&lt;p&gt;The iPhone 16 has a dedicated &lt;strong&gt;Action Button&lt;/strong&gt; which I&amp;rsquo;ve mapped to an Apple Shortcut called &amp;ldquo;Log To Clawdbot&amp;rdquo;. The flow:&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Voice on Munatsi Ziumbe</title>
+    <link>https://munatsi.ziumbe.com/tags/voice/</link>
+    <description>Recent content in Voice on Munatsi Ziumbe</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://munatsi.ziumbe.com/tags/voice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Logging via Apple Shortcuts</title>
+      <link>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://munatsi.ziumbe.com/skills/apple-shortcuts-logging/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; One-tap voice logging from iPhone to Obsidian vault. Press a button, speak, and it lands as a timestamped entry in today&amp;rsquo;s daily note.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When I use it:&lt;/strong&gt; Quick thoughts, task notes, meeting observations, anything worth capturing in the moment — without opening an app or typing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h2&gt;&#xA;&lt;p&gt;The iPhone 16 has a dedicated &lt;strong&gt;Action Button&lt;/strong&gt; which I&amp;rsquo;ve mapped to an Apple Shortcut called &amp;ldquo;Log To Clawdbot&amp;rdquo;. The flow:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
