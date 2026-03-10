@@ -1,19 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cli on Munatsi Ziumbe</title>
-    <link>https://munatsi.ziumbe.com/tags/cli/</link>
-    <description>Recent content in Cli on Munatsi Ziumbe</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://munatsi.ziumbe.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Transcribe Audio with Whisper</title>
-      <link>https://munatsi.ziumbe.com/skills/whisper-transcription/</link>
-      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://munatsi.ziumbe.com/skills/whisper-transcription/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; Convert audio files (voice notes, meetings, board calls) to text using OpenAI&amp;rsquo;s Whisper model locally. No API key, no cloud.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When I use it:&lt;/strong&gt; Meeting transcriptions, Tarcon board meetings, voice note processing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;whisper recording.m4a --model tiny --output_format txt --output_dir /tmp/whisper_out&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;key-options&#34;&gt;Key Options&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Flag&lt;/th&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;--model tiny&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Fast, low RAM (~1GB). Use on VPS&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;--model base&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Better accuracy, still light&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;--model small&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Good quality, needs ~2GB RAM&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;--output_format txt&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Plain text. Also: &lt;code&gt;srt&lt;/code&gt;, &lt;code&gt;vtt&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;--language en&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Force English (skips detection)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;tips&#34;&gt;Tips&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;VPS:&lt;/strong&gt; Always use &lt;code&gt;--model tiny&lt;/code&gt; — the box can&amp;rsquo;t handle larger models&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Zim accents:&lt;/strong&gt; Feed known vocabulary via &lt;code&gt;--initial_prompt &amp;quot;Tarcon, Tongogara, Chinhoyi, Ziumbe, Gudo&amp;quot;&lt;/code&gt; to improve proper noun accuracy&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Voice notes&lt;/strong&gt; land in &lt;code&gt;~/.moltbot/media/inbound/&lt;/code&gt; as &lt;code&gt;.ogg&lt;/code&gt; — sort by date: &lt;code&gt;ls -lt *.ogg | head -5&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Post-processing:&lt;/strong&gt; Keep a find-and-replace dictionary for known garbles (e.g. &amp;ldquo;Cito Faran&amp;rdquo; → &amp;ldquo;City of Harare&amp;rdquo;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;real-example&#34;&gt;Real Example&lt;/h2&gt;&#xA;&lt;p&gt;Transcribing a Tarcon board meeting (1.5 hours, .m4a):&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cli on Munatsi Ziumbe</title><link>https://munatsi.ziumbe.com/tags/cli/</link><description>Recent content in Cli on Munatsi Ziumbe</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://munatsi.ziumbe.com/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>Transcribe Audio with Whisper</title><link>https://munatsi.ziumbe.com/skills/whisper-transcription/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://munatsi.ziumbe.com/skills/whisper-transcription/</guid><description>&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; Convert audio files (voice notes, meetings, board calls) to text using OpenAI&amp;rsquo;s Whisper model locally. No API key, no cloud.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When I use it:&lt;/strong&gt; Meeting transcriptions, Tarcon board meetings, voice note processing.&lt;/p&gt;
+&lt;h2 id="quick-start"&gt;Quick Start&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;whisper recording.m4a --model tiny --output_format txt --output_dir /tmp/whisper_out
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="key-options"&gt;Key Options&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Flag&lt;/th&gt;
+ &lt;th&gt;Purpose&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;--model tiny&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Fast, low RAM (~1GB). Use on VPS&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;--model base&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Better accuracy, still light&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;--model small&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Good quality, needs ~2GB RAM&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;--output_format txt&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Plain text. Also: &lt;code&gt;srt&lt;/code&gt;, &lt;code&gt;vtt&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;--language en&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Force English (skips detection)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="tips"&gt;Tips&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VPS:&lt;/strong&gt; Always use &lt;code&gt;--model tiny&lt;/code&gt; — the box can&amp;rsquo;t handle larger models&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zim accents:&lt;/strong&gt; Feed known vocabulary via &lt;code&gt;--initial_prompt &amp;quot;Tarcon, Tongogara, Chinhoyi, Ziumbe, Gudo&amp;quot;&lt;/code&gt; to improve proper noun accuracy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Voice notes&lt;/strong&gt; land in &lt;code&gt;~/.moltbot/media/inbound/&lt;/code&gt; as &lt;code&gt;.ogg&lt;/code&gt; — sort by date: &lt;code&gt;ls -lt *.ogg | head -5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Post-processing:&lt;/strong&gt; Keep a find-and-replace dictionary for known garbles (e.g. &amp;ldquo;Cito Faran&amp;rdquo; → &amp;ldquo;City of Harare&amp;rdquo;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="real-example"&gt;Real Example&lt;/h2&gt;
+&lt;p&gt;Transcribing a Tarcon board meeting (1.5 hours, .m4a):&lt;/p&gt;</description></item></channel></rss>
